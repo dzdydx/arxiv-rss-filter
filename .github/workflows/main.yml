@@ -3,7 +3,8 @@ name: Run Arxiv Filter
 on:
   schedule:
     # 北京时间 10:00 对应 UTC 时间 02:00
-    - cron: '0 2 * * 1-6'  # 周一到周六 UTC 02:00 (北京时间 10:00)
+    - cron: '0 2 * * 1-5'  # 周一到周五 UTC 02:00 (北京时间 10:00)
+  workflow_dispatch:  # 添加手动触发选项
 
 jobs:
   check-updates:
@@ -79,4 +80,16 @@ jobs:
         echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
     
     - name: Run filter
-      run: python main.py 
+      run: python main.py
+    
+    - name: Generate RSS feed
+      run: python generate_rss.py
+    
+    - name: Deploy RSS feed
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        publish_branch: gh-pages
+        keep_files: true
+        commit_message: ${{ github.event.head_commit.message }} 
