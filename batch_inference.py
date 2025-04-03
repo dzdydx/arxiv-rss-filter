@@ -50,7 +50,7 @@ class BatchInference:
                 model=MODEL_NAME,
                 messages=[
                     {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_content["summary"]},
+                    {"role": "user", "content": user_content["content"]},
                 ],
                 temperature=0.8
             )
@@ -70,6 +70,7 @@ class BatchInference:
                     "success": False,
                     "isRelated": True, # 解析失败，看看LLM返回了什么东西
                     "raw_response": result,
+                    "chineseSummary": "解析失败，请查看原始内容",
                     "error": str(e)
                 }
                 error_result.update(user_content)

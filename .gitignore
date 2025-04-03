@@ -1,4 +1,5 @@
 arxiv_updates/
+*.xml
 
 # Python
 __pycache__/
