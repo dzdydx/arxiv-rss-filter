@@ -4,25 +4,12 @@ import json
 from datetime import datetime
 import uvloop
 from volcenginesdkarkruntime import AsyncArk
-import logging
 from typing import List, Optional
 from config import API_KEY, BASE_URL, MODEL_NAME
-
+from logger import setup_logger
+from utils import save_results
 # 配置日志
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(formatter)
-
-file_handler = logging.FileHandler('out.log', encoding='utf-8')
-file_handler.setFormatter(formatter)
-
-logger.addHandler(console_handler)
-logger.addHandler(file_handler)
-
+logger = setup_logger(__name__)
 
 class BatchInference:
     """批量推理处理类"""
@@ -40,8 +27,8 @@ class BatchInference:
         worker_id: int,
         task_index: int,
         system_prompt: str,
-        user_content: Optional[str]
-    ) -> Optional[str]:
+        user_content: Optional[dict]
+    ) -> Optional[dict]:
         """处理单个任务
         
         Args:
@@ -53,7 +40,7 @@ class BatchInference:
         Returns:
             处理结果或 None（如果失败）
         """
-        if user_content is None:
+        if not user_content:
             logger.info(f"Worker {worker_id} task {task_index} skipped (None input)")
             return None
             
@@ -63,13 +50,30 @@ class BatchInference:
                 model=MODEL_NAME,
                 messages=[
                     {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_content},
+                    {"role": "user", "content": user_content["summary"]},
                 ],
                 temperature=0.8
             )
             result = completion.choices[0].message.content
             logger.info(f"Worker {worker_id} task {task_index} is completed.")
-            return result
+            try:
+                # 将字符串结果解析为字典对象
+                result_dict = json.loads(result)
+                result_dict.update(user_content)
+                result_dict["success"] = True
+                return result_dict
+            except json.JSONDecodeError as e:
+                logger.error(f"Worker {worker_id} task {task_index} failed to parse JSON: {e}")
+                logger.error(f"Raw response content: {result}")
+                # 创建一个包含原始内容的字典，并设置isRelated为false
+                error_result = {
+                    "success": False,
+                    "isRelated": True, # 解析失败，看看LLM返回了什么东西
+                    "raw_response": result,
+                    "error": str(e)
+                }
+                error_result.update(user_content)
+                return error_result
         except Exception as e:
             logger.error(f"Worker {worker_id} task {task_index} failed with error: {e}")
             return None
@@ -79,8 +83,8 @@ class BatchInference:
         worker_id: int,
         task_num: int,
         system_prompt: str,
-        user_content: List[str]
-    ) -> List[str]:
+        user_content: List[dict]
+    ) -> List[dict]:
         """单个 worker 处理多个任务
         
         Args:
@@ -93,22 +97,16 @@ class BatchInference:
             处理结果列表
         """
         logger.info(f"Worker {worker_id} is starting.")
-        results = []
-        
-        for i in range(task_num):
-            result = await self.process_single_task(
-                worker_id, i, system_prompt, user_content[i]
-            )
-            results.append(result)
-            
+        tasks = [self.process_single_task(worker_id, i, system_prompt, content) for i, content in enumerate(user_content)]
+        results = await asyncio.gather(*tasks)
         logger.info(f"Worker {worker_id} is completed.")
         return results
 
     async def create_tasks(
         self,
         system_prompt: str,
-        user_content: List[str]
-    ) -> List[str]:
+        user_content: List[dict]
+    ) -> List[dict]:
         """创建并执行批量任务
         
         Args:
@@ -124,9 +122,7 @@ class BatchInference:
         # 计算 worker 数量
         max_concurrent_tasks = max(1, (total_items + self.task_num - 1) // self.task_num)
         
-        logger.info(f"Total items to process: {total_items}")
-        logger.info(f"Tasks per worker: {self.task_num}")
-        logger.info(f"Number of workers: {max_concurrent_tasks}")
+        logger.info(f"Processing {total_items} items with {max_concurrent_tasks} workers")
 
         # 填充数据以确保任务数量一致
         padding_size = (max_concurrent_tasks * self.task_num) - total_items
@@ -134,19 +130,11 @@ class BatchInference:
             user_content.extend([None] * padding_size)
             logger.info(f"Padded content with {padding_size} empty items")
 
-        # 创建任务
-        tasks = []
-        for i in range(max_concurrent_tasks):
-            start_idx = i * self.task_num
-            end_idx = min((i + 1) * self.task_num, len(user_content))
-            worker_content = user_content[start_idx:end_idx]
-            
-            if len(worker_content) < self.task_num:
-                worker_content.extend([None] * (self.task_num - len(worker_content)))
-                
-            tasks.append(self.worker(i, self.task_num, system_prompt, worker_content))
-
-        # 执行所有任务
+        # 创建并执行任务
+        tasks = [
+            self.worker(i, self.task_num, system_prompt, user_content[i * self.task_num:(i + 1) * self.task_num])
+            for i in range(max_concurrent_tasks)
+        ]
         all_results = await asyncio.gather(*tasks)
         
         # 处理结果
@@ -156,10 +144,13 @@ class BatchInference:
         
         # 记录统计信息
         end_time = datetime.now()
-        logger.info(f"Total time: {end_time - start_time}")
+        logger.info(f"Completed in {end_time - start_time}")
         logger.info(f"Total items processed: {total_items}")
         logger.info(f"Successful items: {total_success}")
         logger.info(f"Success rate: {success_rate:.2f}%")
+
+        # 返回之前，保存结果到文件，以免后续运行时重复推理
+        save_results(actual_results, f"temp_{datetime.now().strftime('%H-%M-%S')}")
 
         return actual_results
 
