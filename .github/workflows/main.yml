@@ -25,6 +25,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
+    - name: Create .env file
+      run: |
+        echo "API_KEY=${{ secrets.API_KEY }}" > .env
+        echo "MODEL_NAME=${{ secrets.MODEL_NAME }}" >> .env
+        echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
+    
     - name: Check for updates
       id: check
       run: |
