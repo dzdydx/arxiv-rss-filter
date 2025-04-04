@@ -22,6 +22,7 @@ def get_rss_from_url(url: str) -> Optional[dict]:
                 "title": feed.feed.title,
                 "link": feed.feed.link,
                 "updated": feed.feed.updated,
+                "published": feed.feed.published
             },
             "entries": [
                 {
