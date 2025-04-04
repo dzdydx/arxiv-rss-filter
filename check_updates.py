@@ -78,5 +78,6 @@ def main() -> bool:
 
 if __name__ == "__main__":
     has_updates = main()
-    # 为了与GitHub Actions集成，输出特定格式的结果
-    print(f"::set-output name=has_updates::{str(has_updates).lower()}") 
+    # 使用新的 GITHUB_OUTPUT 环境文件语法
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+        f.write(f"has_updates={str(has_updates).lower()}\n") 
