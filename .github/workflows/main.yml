@@ -3,7 +3,7 @@ name: Run Arxiv Filter
 on:
   schedule:
     # 北京时间 10:00 对应 UTC 时间 02:00
-    - cron: '0 2 * * 1-5'  # 周一到周五 UTC 02:00 (北京时间 10:00)
+    - cron: '1 4 * * 1-5'  # 周一到周五 UTC 04:01 (北京时间 12:01)
   workflow_dispatch:  # 添加手动触发选项
 
 jobs:
