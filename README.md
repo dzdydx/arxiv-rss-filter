@@ -16,7 +16,7 @@
 
 1. 访问 `https://yourusername.github.io/arxiv_filter/feed.xml`
 2. 将链接添加到您的 RSS 阅读器中
-3. 每天早上 10:00（北京时间）自动获取更新
+3. 每天 12:01（北京时间）自动获取更新
 
 ## 使用方法
 
@@ -35,7 +35,7 @@
 
 这些密钥将用于驱动论文筛选和 RSS 生成过程。
 
-推荐使用[火山方舟的批量推理功能](https://www.volcengine.com/docs/82379/1399517)来完成任务。
+本仓库的默认设置采用了火山方舟API，因此推荐使用[火山方舟的批量推理API](https://www.volcengine.com/docs/82379/1399517)来完成任务。如果要使用其他 OpenAI 兼容的API库，需要将`batch_inference.py`中使用的`volcenginesdkarkruntime`库替换为你要使用的库。
 
 ### 3. 修改配置 (可选)
 
