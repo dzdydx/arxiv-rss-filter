@@ -86,4 +86,13 @@ jobs:
         publish_dir: .
         publish_branch: gh-pages
         keep_files: true
-        commit_message: ${{ github.event.head_commit.message }} 
+        commit_message: ${{ github.event.head_commit.message }}
+    
+    - name: Commit batch inference cache
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'Update batch inference cache [skip ci]'
+        file_pattern: 'arxiv_updates/batch_results_*.json'
+        commit_user_name: 'github-actions[bot]'
+        commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+        skip_dirty_check: true 
