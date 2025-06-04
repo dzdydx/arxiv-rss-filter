@@ -31,6 +31,13 @@ jobs:
         echo "MODEL_NAME=${{ secrets.MODEL_NAME }}" >> .env
         echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
     
+    - name: Download previous batch inference cache
+      uses: actions/download-artifact@v4
+      with:
+        name: batch-inference-cache
+        path: arxiv_updates/
+      continue-on-error: true  # 首次运行时可能没有缓存
+    
     - name: Check for updates
       id: check
       run: python check_updates.py
@@ -43,6 +50,15 @@ jobs:
         path: rss_cache.json
         retention-days: 1
     
+    - name: Upload batch inference cache
+      if: steps.check.outputs.has_updates == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: batch-inference-cache
+        path: arxiv_updates/batch_results_*.json
+        retention-days: 7  # 保留7天，覆盖工作日周期
+      continue-on-error: true  # 如果没有缓存文件也不报错
+
   run-filter:
     needs: check-updates
     if: needs.check-updates.outputs.has_updates == 'true'
@@ -67,17 +83,32 @@ jobs:
         echo "MODEL_NAME=${{ secrets.MODEL_NAME }}" >> .env
         echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
     
-    - name: Download cache from previous job
+    - name: Download RSS cache from previous job
       uses: actions/download-artifact@v4
       with:
         name: rss-cache
         path: .
+    
+    - name: Download batch inference cache from previous job
+      uses: actions/download-artifact@v4
+      with:
+        name: batch-inference-cache
+        path: arxiv_updates/
+      continue-on-error: true  # 如果没有缓存也不报错
     
     - name: Run filter
       run: python run_filter.py
     
     - name: Generate RSS feed
       run: python generate_rss.py
+    
+    - name: Upload updated batch inference cache
+      uses: actions/upload-artifact@v4
+      with:
+        name: batch-inference-cache-updated
+        path: arxiv_updates/batch_results_*.json
+        retention-days: 7
+      continue-on-error: true
     
     - name: Deploy RSS feed
       uses: peaceiris/actions-gh-pages@v3
@@ -86,12 +117,4 @@ jobs:
         publish_dir: .
         publish_branch: gh-pages
         keep_files: true
-        commit_message: ${{ github.event.head_commit.message }}
-    
-    - name: Commit batch inference cache
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: 'Update batch inference cache [skip ci]'
-        file_pattern: 'arxiv_updates/batch_results_*.json'
-        commit_user_name: 'github-actions[bot]'
-        commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com' 
+        commit_message: ${{ github.event.head_commit.message }} 
