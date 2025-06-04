@@ -94,5 +94,4 @@ jobs:
         commit_message: 'Update batch inference cache [skip ci]'
         file_pattern: 'arxiv_updates/batch_results_*.json'
         commit_user_name: 'github-actions[bot]'
-        commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-        skip_dirty_check: true 
+        commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com' 
