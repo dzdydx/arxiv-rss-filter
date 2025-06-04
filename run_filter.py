@@ -35,8 +35,11 @@ async def filter_rss_content(rss_content: dict, user_interest: str) -> List[dict
     batch_inference = BatchInference()
     results = await batch_inference.create_tasks(sys_prompt, paper_infos)
     # 只保留isRelated为True，且success为True的paper_info
-    results = [res for res in results if res["isRelated"] and res["success"]]
-
+    results = [res for res in results 
+               if res is not None 
+               and (res["isRelated"] is True or res["isRelated"] == "true")
+               and res["success"] is True]
+    
     return results
 
 async def main():
