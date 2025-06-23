@@ -7,177 +7,72 @@
     <atom:link href="https://raw.githubusercontent.com/None/arxiv_filter/main/feed.xml" rel="self" type="application/rss+xml" />
     <docs>http://www.rssboard.org/rss-specification</docs>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Jun 2025 12:40:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 12:49:33 +0800</lastBuildDate>
     <managingEditor>None@github.com</managingEditor>
-    <pubDate>Wed, 18 Jun 2025 12:40:00 +0800</pubDate>
+    <pubDate>Mon, 23 Jun 2025 12:49:33 +0800</pubDate>
     <skipDays>
         <day>Saturday</day>
         <day>Sunday</day>
     </skipDays>
 
     <item>
-        <title>Multi-Scale Finetuning for Encoder-based Time Series Foundation Models</title>
-        <link>https://arxiv.org/abs/2506.14087</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.14087v1</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Zhongzheng Qiao, Chenghao Liu, Yiming Zhang, Ming Jin, Quang Pham, Qingsong Wen, P. N. Suganthan, Xudong Jiang, Savitha Ramasamy</dc:creator>
-        <description><![CDATA[
-            背景：时间序列基础模型（TSFMs）在时间序列预测中有出色的零样本性能，但如何在特定下游任务上有效微调TSFMs是未充分探索的挑战，简单微调存在不足。方法：从因果角度分析微调过程，强调显式建模多尺度的重要性，针对基于编码器的TSFMs提出多尺度微调（MSFT）框架。效果：在三种不同主干网络上的实验表明，用MSFT微调的TSFMs不仅优于简单和典型的参数高效微调方法，还超越了最先进的深度学习方法。
-            arXiv:2506.14087v1 Announce Type: new 
-Abstract: Time series foundation models (TSFMs) demonstrate impressive zero-shot performance for time series forecasting. However, an important yet underexplored challenge is how to effectively finetune TSFMs on specific downstream tasks. While naive finetuning can yield performance gains, we argue that it falls short of fully leveraging TSFMs' capabilities, often resulting in overfitting and suboptimal performance. Given the diverse temporal patterns across sampling scales and the inherent multi-scale forecasting capabilities of TSFMs, we adopt a causal perspective to analyze finetuning process, through which we highlight the critical importance of explicitly modeling multiple scales and reveal the shortcomings of naive approaches. Focusing on \textit{encoder-based} TSFMs, we propose \textbf{M}ulti\textbf{\textsc{s}}cale \textbf{\textsc{f}}ine\textbf{\textsc{t}}uning (\textbf{MSFT}), a simple yet general framework that explicitly integrates multi-scale modeling into the finetuning process. Experimental results on three different backbones (\moirai, \moment\ and \units) demonstrate that TSFMs finetuned with MSFT not only outperform naive and typical parameter efficient finetuning methods but also surpass state-of-the-art deep learning methods.
-        ]]></description>
-    </item>
-    <item>
-        <title>Chaining Event Spans for Temporal Relation Grounding</title>
-        <link>https://arxiv.org/abs/2506.14213</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.14213v1</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Jongho Kim, Dohyeon Lee, Minsoo Kim, Seung-won Hwang</dc:creator>
-        <description><![CDATA[
-            背景：准确理解事件间的时间关系是众多任务的关键，现有依赖答案重叠对比问题的方法不可靠。方法：提出通过预测事件时间跨度模块引发正确推理行为的新方法，引入时间线推理网络（TRN），分两步归纳推理，先结合语义和句法信息回答问题，再关联同一事件的多个问题预测时间线来确定答案。效果：在相关任务中，TRN 能有效解决虚假重叠问题，优于以往方法。
-            arXiv:2506.14213v1 Announce Type: new 
-Abstract: Accurately understanding temporal relations between events is a critical building block of diverse tasks, such as temporal reading comprehension (TRC) and relation extraction (TRE). For example in TRC, we need to understand the temporal semantic differences between the following two questions that are lexically near-identical: "What finished right before the decision?" or "What finished right after the decision?". To discern the two questions, existing solutions have relied on answer overlaps as a proxy label to contrast similar and dissimilar questions. However, we claim that answer overlap can lead to unreliable results, due to spurious overlaps of two dissimilar questions with coincidentally identical answers. To address the issue, we propose a novel approach that elicits proper reasoning behaviors through a module for predicting time spans of events. We introduce the Timeline Reasoning Network (TRN) operating in a two-step inductive reasoning process: In the first step model initially answers each question with semantic and syntactic information. The next step chains multiple questions on the same event to predict a timeline, which is then used to ground the answers. Results on the TORQUE and TB-dense, TRC and TRE tasks respectively, demonstrate that TRN outperforms previous methods by effectively resolving the spurious overlaps using the predicted timeline.
-        ]]></description>
-    </item>
-    <item>
-        <title>Assessing the Reasoning Capabilities of LLMs in the context of Evidence-based Claim Verification</title>
-        <link>https://arxiv.org/abs/2402.10735</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2402.10735v4</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>John Dougrez-Lewis, Mahmud Elahi Akhter, Federico Ruggeri, Sebastian L\"obbers, Yulan He, Maria Liakata</dc:creator>
-        <description><![CDATA[
-            背景：大语言模型（LLMs）在数学和编码推理任务表现出色，但其他形式推理能力仍待研究。方法：从声明验证角度出发，提出框架将声明与证据拆解为原子推理类型，创建首个声明验证基准RECV，包含三个复杂度递增的数据集，在多提示设置下评估三个先进的专有LLMs。效果：LLMs能解决演绎推理问题，但在溯因推理中常失败，增强其理由生成能力并非总是有益，不过生成的理由在演绎推理中与人类提供的语义相似。
-            arXiv:2402.10735v4 Announce Type: replace 
-Abstract: Although LLMs have shown great performance on Mathematics and Coding related reasoning tasks, the reasoning capabilities of LLMs regarding other forms of reasoning are still an open problem. Here, we examine the issue of reasoning from the perspective of claim verification. We propose a framework designed to break down any claim paired with evidence into atomic reasoning types that are necessary for verification. We use this framework to create RECV, the first claim verification benchmark, incorporating real-world claims, to assess the deductive and abductive reasoning capabilities of LLMs. The benchmark comprises of three datasets, covering reasoning problems of increasing complexity. We evaluate three state-of-the-art proprietary LLMs under multiple prompt settings. Our results show that while LLMs can address deductive reasoning problems, they consistently fail in cases of abductive reasoning. Moreover, we observe that enhancing LLMs with rationale generation is not always beneficial. Nonetheless, we find that generated rationales are semantically similar to those provided by humans, especially in deductive reasoning cases.
-        ]]></description>
-    </item>
-    <item>
-        <title>Graph RAG for Legal Norms: A Hierarchical, Temporal and Deterministic Approach</title>
-        <link>https://arxiv.org/abs/2505.00039</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.00039v3</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Hudson de Martim</dc:creator>
-        <description><![CDATA[
-            本文背景是法律文本有层次结构、引用网络和随时间演变的特点，标准AI系统应对其时间动态性有挑战。方法上，提出适配的图检索增强生成（Graph RAG）方法，基于受FRBRoo启发的模型构建知识图谱，引入时间版本和语言版本的多层表示，将规范演变建模为版本实体序列。效果是让大语言模型能基于准确、上下文感知和时间点正确的法律信息生成回复，克服时间不准确风险，有望推动人工智能在法律领域的应用。
-            arXiv:2505.00039v3 Announce Type: replace 
-Abstract: This article proposes an adaptation of Graph Retrieval-Augmented Generation (Graph RAG) specifically designed for the analysis and comprehension of legal norms. Legal texts are characterized by a predefined hierarchical structure, an extensive network of references and a continuous evolution through multiple temporal versions. This temporal dynamism poses a significant challenge for standard AI systems, demanding a deterministic representation of the law at any given point in time. To address this, our approach grounds the knowledge graph construction in a formal, FRBRoo-inspired model that distinguishes abstract legal works from their concrete textual expressions. We introduce a multi-layered representation of Temporal Versions (capturing date-specific changes) and Language Versions (capturing linguistic variations). By modeling normative evolution as a precise sequence of these versioned entities, we enable the construction of a knowledge graph that serves as a verifiable "ground truth". This allows Large Language Models to generate responses based on accurate, context-aware, and point-in-time correct legal information, overcoming the risk of temporal inaccuracies. Through a detailed analysis of this formal Graph RAG approach and its application to legal norm datasets, this article aims to advance the field of Artificial Intelligence applied to Law, creating opportunities for more effective and reliable systems in legal research, legislative analysis, and decision support.
-        ]]></description>
-    </item>
-    <item>
-        <title>MMedAgent-RL: Optimizing Multi-Agent Collaboration for Multimodal Medical Reasoning</title>
-        <link>https://arxiv.org/abs/2506.00555</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.00555v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Peng Xia, Jinglu Wang, Yibo Peng, Kaide Zeng, Xian Wu, Xiangru Tang, Hongtu Zhu, Yun Li, Shujie Liu, Yan Lu, Huaxiu Yao</dc:creator>
-        <description><![CDATA[
-            背景：医疗大视觉语言模型在多模态诊断任务有潜力，但单智能体模型泛化性差，现有多智能体协作框架缺乏灵活性。方法：提出基于强化学习的多智能体框架MMedAgent-RL，训练两个基于Qwen2.5 - VL的全科医生智能体，还引入课程学习引导的强化学习策略解决专家输出不一致问题。效果：在五个医疗视觉问答基准测试中，MMedAgent - RL不仅超越开源和专有模型，还呈现类人推理模式，较监督微调基线平均性能提升20.7%。
-            arXiv:2506.00555v2 Announce Type: replace 
-Abstract: Medical Large Vision-Language Models (Med-LVLMs) have shown strong potential in multimodal diagnostic tasks. However, existing single-agent models struggle to generalize across diverse medical specialties, limiting their performance. Recent efforts introduce multi-agent collaboration frameworks inspired by clinical workflows, where general practitioners (GPs) and specialists interact in a fixed sequence. Despite improvements, these static pipelines lack flexibility and adaptability in reasoning. To address this, we propose MMedAgent-RL, a reinforcement learning (RL)-based multi-agent framework that enables dynamic, optimized collaboration among medical agents. Specifically, we train two GP agents based on Qwen2.5-VL via RL: the triage doctor learns to assign patients to appropriate specialties, while the attending physician integrates the judgments from multi-specialists and its own knowledge to make final decisions. To address the inconsistency in specialist outputs, we introduce a curriculum learning (CL)-guided RL strategy that progressively teaches the attending physician to balance between imitating specialists and correcting their mistakes. Experiments on five medical VQA benchmarks demonstrate that MMedAgent-RL not only outperforms both open-source and proprietary Med-LVLMs, but also exhibits human-like reasoning patterns. Notably, it achieves an average performance gain of 20.7% over supervised fine-tuning baselines.
-        ]]></description>
-    </item>
-    <item>
-        <title>Acoustic scattering AI for non-invasive object classifications: A case study on hair assessment</title>
-        <link>https://arxiv.org/abs/2506.14148</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.14148v1</guid>
+        <title>VS-Singer: Vision-Guided Stereo Singing Voice Synthesis with Consistency Schr\"odinger Bridge</title>
+        <link>https://arxiv.org/abs/2506.16020</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.16020v1</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Long-Vu Hoang, Tuan Nguyen, Tran Huy Dat</dc:creator>
+        <dc:creator>Zijing Zhao, Kai Wang, Hao Huang, Ying Hu, Liang He, Jichen Yang</dc:creator>
         <description><![CDATA[
-            该论文背景是探索非侵入式物体分类新方法。其方法是利用声波散射，通过向带头发样本的头部发射声学刺激并捕捉散射信号，采用基于AI和深度学习的声音分类技术，对头发类型和湿度进行分类，还对比了全监督深度学习、基于嵌入的分类等多种方法。效果方面，通过微调自监督模型的所有参数，最佳策略实现了近90%的分类准确率，为各行业提供了一种保护隐私、非接触式的物体分类方案。
-            arXiv:2506.14148v1 Announce Type: new 
-Abstract: This paper presents a novel non-invasive object classification approach using acoustic scattering, demonstrated through a case study on hair assessment. When an incident wave interacts with an object, it generates a scattered acoustic field encoding structural and material properties. By emitting acoustic stimuli and capturing the scattered signals from head-with-hair-sample objects, we classify hair type and moisture using AI-driven, deep-learning-based sound classification. We benchmark comprehensive methods, including (i) fully supervised deep learning, (ii) embedding-based classification, (iii) supervised foundation model fine-tuning, and (iv) self-supervised model fine-tuning. Our best strategy achieves nearly 90% classification accuracy by fine-tuning all parameters of a self-supervised model. These results highlight acoustic scattering as a privacy-preserving, non-contact alternative to visual classification, opening huge potential for applications in various industries.
+            该研究背景是探索利用图像空间线索生成带房间混响的立体声歌声的优势。为此提出VS - Singer模型，它包含三个模块：模态交互网络将空间特征融入文本编码；解码器用一致性薛定谔桥实现一步采样生成；SFE模块提升视听匹配一致性。这是首次将立体声歌声合成与视觉声学匹配结合。实验表明，VS - Singer能一步有效生成与场景视角相符的立体声歌声。
+            arXiv:2506.16020v1 Announce Type: new 
+Abstract: To explore the potential advantages of utilizing spatial cues from images for generating stereo singing voices with room reverberation, we introduce VS-Singer, a vision-guided model designed to produce stereo singing voices with room reverberation from scene images. VS-Singer comprises three modules: firstly, a modal interaction network integrates spatial features into text encoding to create a linguistic representation enriched with spatial information. Secondly, the decoder employs a consistency Schr\"odinger bridge to facilitate one-step sample generation. Moreover, we utilize the SFE module to improve the consistency of audio-visual matching. To our knowledge, this study is the first to combine stereo singing voice synthesis with visual acoustic matching within a unified framework. Experimental results demonstrate that VS-Singer can effectively generate stereo singing voices that align with the scene perspective in a single step.
         ]]></description>
     </item>
     <item>
-        <title>Adaptive Accompaniment with ReaLchords</title>
-        <link>https://arxiv.org/abs/2506.14723</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.14723v1</guid>
+        <title>Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training</title>
+        <link>https://arxiv.org/abs/2506.16833</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.16833v1</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Yusong Wu, Tim Cooijmans, Kyle Kastner, Adam Roberts, Ian Simon, Alexander Scarlatos, Chris Donahue, Cassie Tarakajian, Shayegan Omidshafiei, Aaron Courville, Pablo Samuel Castro, Natasha Jaques, Cheng-Zhi Anna Huang</dc:creator>
+        <dc:creator>Jianyuan Feng, Guangzheng Li, Yangfei Xu</dc:creator>
         <description><![CDATA[
-            背景：当前音乐生成模型无法在线生成与其他音乐家同步的音乐。方法：提出在线生成模型ReaLchords，先以最大似然法预训练在线模型，再用强化学习微调，微调目标结合了能提供旋律与和弦和声及时间连贯性反馈的新奖励模型，以及从能看到未来旋律的教师模型进行新型蒸馏的散度项。效果：经定量实验和听力测试，该模型能很好适应陌生输入，生成合适伴奏，为实时即兴演奏和多模态同步共创打开了大门。
-            arXiv:2506.14723v1 Announce Type: new 
-Abstract: Jamming requires coordination, anticipation, and collaborative creativity between musicians. Current generative models of music produce expressive output but are not able to generate in an \emph{online} manner, meaning simultaneously with other musicians (human or otherwise). We propose ReaLchords, an online generative model for improvising chord accompaniment to user melody. We start with an online model pretrained by maximum likelihood, and use reinforcement learning to finetune the model for online use. The finetuning objective leverages both a novel reward model that provides feedback on both harmonic and temporal coherency between melody and chord, and a divergence term that implements a novel type of distillation from a teacher model that can see the future melody. Through quantitative experiments and listening tests, we demonstrate that the resulting model adapts well to unfamiliar input and produce fitting accompaniment. ReaLchords opens the door to live jamming, as well as simultaneous co-creation in other modalities.
+            这是一篇关于音频分离的研究。现有语言查询音频分离（LASS）方法在将复杂听觉特征与语言上下文对齐、保持分离精度方面存在挑战，且预训练自监督学习（SSL）音频模型和对比语言 - 音频预训练（CLAP）框架的潜力未被充分挖掘。为此，提出HybridSep两阶段LASS框架，结合SSL声学表征和CLAP语义嵌入，并引入对抗一致训练（ACT）优化策略。实验表明，HybridSep在多个指标上显著优于现有基线方法，为LASS任务树立了新标杆。
+            arXiv:2506.16833v1 Announce Type: new 
+Abstract: Language-queried Audio Separation (LASS) employs linguistic queries to isolate target sounds based on semantic descriptions. However, existing methods face challenges in aligning complex auditory features with linguistic context while preserving separation precision. Current research efforts focus primarily on text description augmentation and architectural innovations, yet the potential of integrating pre-trained self-supervised learning (SSL) audio models and Contrastive Language-Audio Pretraining (CLAP) frameworks, capable of extracting cross-modal audio-text relationships, remains underexplored. To address this, we present HybridSep, a two-stage LASS framework that synergizes SSL-based acoustic representations with CLAP-derived semantic embeddings. Our framework introduces Adversarial Consistent Training (ACT), a novel optimization strategy that treats diffusion as an auxiliary regularization loss while integrating adversarial training to enhance separation fidelity. Experiments demonstrate that HybridSep achieves significant performance improvements over state-of-the-art baselines (e.g., AudioSep, FlowSep) across multiple metrics, establishing new benchmarks for LASS tasks.
         ]]></description>
     </item>
     <item>
-        <title>The Perception of Phase Intercept Distortion and its Application in Data Augmentation</title>
-        <link>https://arxiv.org/abs/2506.14571</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.14571v1</guid>
+        <title>LM-SPT: LM-Aligned Semantic Distillation for Speech Tokenization</title>
+        <link>https://arxiv.org/abs/2506.16738</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.16738v1</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Venkatakrishnan Vaidyanathapuram Krishnan, Nathaniel Condit-Schultz</dc:creator>
+        <dc:creator>Daejin Jo, Jeeyoung Yun, Byungseok Roh, Sungwoong Kim</dc:creator>
         <description><![CDATA[
-            本文聚焦于相位截距失真，它是相位失真的一种特殊情况，由与频率无关的相移产生。研究假设这种失真虽大幅改变信号波形，但人耳难以察觉，人体实验结果证实了该假设。此外，探讨了其在机器学习尤其是数据增强方面的应用，将相位截距失真作为一种新的数据增强方法开展多次实验，在音频机器学习任务中取得了更优结果。
-            arXiv:2506.14571v1 Announce Type: cross 
-Abstract: Phase distortion refers to the alteration of the phase relationships between frequencies in a signal, which can be perceptible. In this paper, we discuss a special case of phase distortion known as phase-intercept distortion, which is created by a frequency-independent phase shift. We hypothesize that, though this form of distortion changes a signal's waveform significantly, the distortion is imperceptible. Human-subject experiment results are reported which are consistent with this hypothesis. Furthermore, we discuss how the imperceptibility of phase-intercept distortion can be useful for machine learning, specifically for data augmentation. We conducted multiple experiments using phase-intercept distortion as a novel approach to data augmentation, and obtained improved results for audio machine learning tasks.
+            随着语音语言模型发展，离散语音标记成为语音与文本核心接口。现有语音标记方法虽能分离语义信息，但生成的语音标记序列过长，降低帧率又会破坏语义结构。为此提出LM - SPT方法，通过从语义标记重建语音，最小化原始与重建波形编码表示的差异，实现语义蒸馏。该方法还改进了编解码器架构，支持多种帧率。实验表明，LM - SPT重建保真度优于基线，基于其标记训练的SLMs在语音转文本和文本转语音任务中表现良好。
+            arXiv:2506.16738v1 Announce Type: cross 
+Abstract: With the rapid progress of speech language models (SLMs), discrete speech tokens have emerged as a core interface between speech and text, enabling unified modeling across modalities. Recent speech tokenization approaches aim to isolate semantic information from low-level acoustics to better align with language models. In particular, previous methods use SSL teachers such as HuBERT to extract semantic representations, which are then distilled into a semantic quantizer to suppress acoustic redundancy as well as capture content-related latent structures. However, they still produce speech token sequences significantly longer than their textual counterparts, creating challenges for efficient speech-language modeling. Reducing the frame rate is a natural solution, but standard techniques, such as rigid average pooling across frames, can distort or dilute the semantic structure required for effective LM alignment. To address this, we propose LM-SPT, a speech tokenization method that introduces a novel semantic distillation. Instead of directly matching teacher and student features via pooling, we reconstruct speech solely from semantic tokens and minimize the discrepancy between the encoded representations of the original and reconstructed waveforms, obtained from a frozen automatic speech recognition (ASR) encoder. This indirect yet data-driven supervision enables the tokenizer to learn discrete units that are more semantically aligned with language models. LM-SPT further incorporates architectural improvements to the encoder and decoder for speech tokenization, and supports multiple frame rates, including 25Hz, 12.5Hz, and 6.25Hz. Experimental results show that LM-SPT achieves superior reconstruction fidelity compared to baselines, and that SLMs trained with LM-SPT tokens achieve competitive performances on speech-to-text and consistently outperform baselines on text-to-speech tasks.
         ]]></description>
     </item>
     <item>
-        <title>A Variational Framework for Improving Naturalness in Generative Spoken Language Models</title>
-        <link>https://arxiv.org/abs/2506.14767</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.14767v1</guid>
+        <title>EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer</title>
+        <link>https://arxiv.org/abs/2409.10819</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2409.10819v2</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 23 Jun 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Li-Wei Chen, Takuya Higuchi, Zakaria Aldeneh, Ahmed Hussen Abdelaziz, Alexander Rudnicky</dc:creator>
+        <dc:creator>Jiarui Hai, Yong Xu, Hao Zhang, Chenxing Li, Helin Wang, Mounya Elhilali, Dong Yu</dc:creator>
         <description><![CDATA[
-            背景：大语言模型在文本处理的成功促使其应用于语音建模，但语音离散化用于自回归建模时，自监督模型得到的语义标记忽略韵律信息，导致生成语音自然度降低，现有添加音高特征的方法存在不足。方法：提出端到端变分方法，自动学习编码连续语音属性以增强语义标记。效果：无需手动提取和选择副语言特征，且人类评估者认为其生成的语音续接更优。
-            arXiv:2506.14767v1 Announce Type: cross 
-Abstract: The success of large language models in text processing has inspired their adaptation to speech modeling. However, since speech is continuous and complex, it is often discretized for autoregressive modeling. Speech tokens derived from self-supervised models (known as semantic tokens) typically focus on the linguistic aspects of speech but neglect prosodic information. As a result, models trained on these tokens can generate speech with reduced naturalness. Existing approaches try to fix this by adding pitch features to the semantic tokens. However, pitch alone cannot fully represent the range of paralinguistic attributes, and selecting the right features requires careful hand-engineering. To overcome this, we propose an end-to-end variational approach that automatically learns to encode these continuous speech attributes to enhance the semantic tokens. Our approach eliminates the need for manual extraction and selection of paralinguistic features. Moreover, it produces preferred speech continuations according to human raters. Code, samples and models are available at https://github.com/b04901014/vae-gslm.
-        ]]></description>
-    </item>
-    <item>
-        <title>Multi-Source Music Generation with Latent Diffusion</title>
-        <link>https://arxiv.org/abs/2409.06190</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2409.06190v4</guid>
-        <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Zhongweiyang Xu, Debottam Dutta, Yu-Lin Wei, Romit Roy Choudhury</dc:creator>
-        <description><![CDATA[
-            背景：多数音乐生成模型直接生成单一音乐混合体，多源扩散模型（MSDM）虽能更灵活可控生成音乐，但存在生成旋律不丰富、有噪声等问题。方法：提出多源潜在扩散模型（MSLDM），用变分自编码器（VAEs）将各乐器源编码为不同潜在表征，训练VAE捕捉各源特征，拼接源潜在表征，让扩散模型学习联合潜在空间。效果：主观听力测试和FAD分数表明，MSLDM优于MSDM，能显著提升音乐生成效果，且生成更高效。
-            arXiv:2409.06190v4 Announce Type: replace 
-Abstract: Most music generation models directly generate a single music mixture. To allow for more flexible and controllable generation, the Multi-Source Diffusion Model (MSDM) has been proposed to model music as a mixture of multiple instrumental sources (e.g. piano, drums, bass, and guitar). Its goal is to use one single diffusion model to generate mutually-coherent music sources, that are then mixed to form the music. Despite its capabilities, MSDM is unable to generate music with rich melodies and often generates empty sounds. Its waveform diffusion approach also introduces significant Gaussian noise artifacts that compromise audio quality. In response, we introduce a Multi-Source Latent Diffusion Model (MSLDM) that employs Variational Autoencoders (VAEs) to encode each instrumental source into a distinct latent representation. By training a VAE on all music sources, we efficiently capture each source's unique characteristics in a "source latent." The source latents are concatenated and our diffusion model learns this joint latent space. This approach significantly enhances the total and partial generation of music by leveraging the VAE's latent compression and noise-robustness. The compressed source latent also facilitates more efficient generation. Subjective listening tests and Frechet Audio Distance (FAD) scores confirm that our model outperforms MSDM, showcasing its practical and enhanced applicability in music generation systems. We also emphasize that modeling sources is more effective than direct music mixture modeling. Codes and models are available at https://github.com/XZWY/MSLDM. Demos are available at https://xzwy.github.io/MSLDMDemo/.
-        ]]></description>
-    </item>
-    <item>
-        <title>ArrayDPS: Unsupervised Blind Speech Separation with a Diffusion Prior</title>
-        <link>https://arxiv.org/abs/2505.05657</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.05657v3</guid>
-        <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 18 Jun 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Zhongweiyang Xu, Xulin Fan, Zhong-Qiu Wang, Xilin Jiang, Romit Roy Choudhury</dc:creator>
-        <description><![CDATA[
-            盲语音分离（BSS）旨在从麦克风阵列记录的音频混合信号中分离出多个语音源，但该问题因是盲逆问题而具有挑战性。本文提出ArrayDPS，以无监督、与阵列无关和生成式的方式解决BSS问题。它基于扩散后验采样（DPS），但需通过制定单独的优化问题来近似似然。该优化解近似房间声学和麦克风间的相对传递函数，结合扩散先验，经采样过程分离出语音源。评估显示，ArrayDPS在SDR方面优于所有无监督基线方法，与有监督方法相当。
-            arXiv:2505.05657v3 Announce Type: replace 
-Abstract: Blind Speech Separation (BSS) aims to separate multiple speech sources from audio mixtures recorded by a microphone array. The problem is challenging because it is a blind inverse problem, i.e., the microphone array geometry, the room impulse response (RIR), and the speech sources, are all unknown. We propose ArrayDPS to solve the BSS problem in an unsupervised, array-agnostic, and generative manner. The core idea builds on diffusion posterior sampling (DPS), but unlike DPS where the likelihood is tractable, ArrayDPS must approximate the likelihood by formulating a separate optimization problem. The solution to the optimization approximates room acoustics and the relative transfer functions between microphones. These approximations, along with the diffusion priors, iterate through the ArrayDPS sampling process and ultimately yield separated voice sources. We only need a simple single-speaker speech diffusion model as a prior along with the mixtures recorded at the microphones; no microphone array information is necessary. Evaluation results show that ArrayDPS outperforms all baseline unsupervised methods while being comparable to supervised methods in terms of SDR. Audio demos are provided at: https://arraydps.github.io/ArrayDPSDemo/.
+            本文背景是需要高质量文本到音频（T2A）生成框架。方法上，提出EzAudio，一是设计优化的EzAudio - DiT用于音频潜在表示，提升收敛速度、参数和内存效率；二是应用无分类器引导（CFG）重缩放技术，减少高CFG分数下的保真度损失；三是提出合成字幕生成策略用于增强T2A预训练。效果上，EzAudio计算高效、收敛快，在主客观评估中表现出色，能带来高度逼真的听觉体验。
+            arXiv:2409.10819v2 Announce Type: replace 
+Abstract: We introduce EzAudio, a text-to-audio (T2A) generation framework designed to produce high-quality, natural-sounding sound effects. Core designs include: (1) We propose EzAudio-DiT, an optimized Diffusion Transformer (DiT) designed for audio latent representations, improving convergence speed, as well as parameter and memory efficiency. (2) We apply a classifier-free guidance (CFG) rescaling technique to mitigate fidelity loss at higher CFG scores and enhancing prompt adherence without compromising audio quality. (3) We propose a synthetic caption generation strategy leveraging recent advances in audio understanding and LLMs to enhance T2A pretraining. We show that EzAudio, with its computationally efficient architecture and fast convergence, is a competitive open-source model that excels in both objective and subjective evaluations by delivering highly realistic listening experiences. Code, data, and pre-trained models are released at: https://haidog-yaqub.github.io/EzAudio-Page/.
         ]]></description>
     </item>
 </channel>
