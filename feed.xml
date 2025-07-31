@@ -7,660 +7,479 @@
     <atom:link href="https://raw.githubusercontent.com/None/arxiv_filter/main/feed.xml" rel="self" type="application/rss+xml" />
     <docs>http://www.rssboard.org/rss-specification</docs>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 30 Jul 2025 12:25:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jul 2025 12:25:14 +0800</lastBuildDate>
     <managingEditor>None@github.com</managingEditor>
-    <pubDate>Wed, 30 Jul 2025 12:25:45 +0800</pubDate>
+    <pubDate>Thu, 31 Jul 2025 12:25:14 +0800</pubDate>
     <skipDays>
         <day>Saturday</day>
         <day>Sunday</day>
     </skipDays>
 
     <item>
-        <title>SemRAG: Semantic Knowledge-Augmented RAG for Improved Question-Answering</title>
-        <link>https://arxiv.org/abs/2507.21110</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21110v1</guid>
+        <title>Measuring Time-Series Dataset Similarity using Wasserstein Distance</title>
+        <link>https://arxiv.org/abs/2507.22189</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22189v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Kezhen Zhong, Basem Suleiman, Abdelkarim Erradi, Shijing Chen</dc:creator>
+        <dc:creator>Hongjie Chen, Akshay Mehra, Josh Kimball, Ryan A. Rossi</dc:creator>
         <description><![CDATA[
-            将特定领域知识集成到大型语言模型中对提升其专业任务表现至关重要，但现有方法存在计算成本高、易过拟合和可扩展性受限等问题。为此，本文提出SemRAG框架，采用语义分块算法降低计算开销，将检索信息构建为知识图谱以捕捉实体关系。在多跳RAG和维基百科数据集上的实验表明，该框架显著提高了从知识图谱中检索信息的相关性和正确性，优于传统RAG方法，还可通过优化缓冲区大小进一步提升性能。
-            arXiv:2507.21110v1 Announce Type: new 
-Abstract: This paper introduces SemRAG, an enhanced Retrieval Augmented Generation (RAG) framework that efficiently integrates domain-specific knowledge using semantic chunking and knowledge graphs without extensive fine-tuning. Integrating domain-specific knowledge into large language models (LLMs) is crucial for improving their performance in specialized tasks. Yet, existing adaptations are computationally expensive, prone to overfitting and limit scalability. To address these challenges, SemRAG employs a semantic chunking algorithm that segments documents based on the cosine similarity from sentence embeddings, preserving semantic coherence while reducing computational overhead. Additionally, by structuring retrieved information into knowledge graphs, SemRAG captures relationships between entities, improving retrieval accuracy and contextual understanding. Experimental results on MultiHop RAG and Wikipedia datasets demonstrate SemRAG has significantly enhances the relevance and correctness of retrieved information from the Knowledge Graph, outperforming traditional RAG methods. Furthermore, we investigate the optimization of buffer sizes for different data corpus, as optimizing buffer sizes tailored to specific datasets can further improve retrieval performance, as integration of knowledge graphs strengthens entity relationships for better contextual comprehension. The primary advantage of SemRAG is its ability to create an efficient, accurate domain-specific LLM pipeline while avoiding resource-intensive fine-tuning. This makes it a practical and scalable approach aligned with sustainability goals, offering a viable solution for AI applications in domain-specific fields.
+            背景：时间序列基础模型研究兴起，对测量时间序列数据集相似性需求增大，该测量对模型选择、微调等研究有帮助。方法：提出基于分布的方法，利用Wasserstein距离测量时间序列数据集相似度，将时间序列数据集视为多元正态分布的经验实例，计算两数据集对应多元正态分布间的Wasserstein距离。效果：实验和可视化表明方法有效，能识别相似数据集，助力基础模型推理性能估计，所提指标与推理损失相关性超0.60。
+            arXiv:2507.22189v1 Announce Type: new 
+Abstract: The emergence of time-series foundation model research elevates the growing need to measure the (dis)similarity of time-series datasets. A time-series dataset similarity measure aids research in multiple ways, including model selection, finetuning, and visualization. In this paper, we propose a distribution-based method to measure time-series dataset similarity by leveraging the Wasserstein distance. We consider a time-series dataset an empirical instantiation of an underlying multivariate normal distribution (MVN). The similarity between two time-series datasets is thus computed as the Wasserstein distance between their corresponding MVNs. Comprehensive experiments and visualization show the effectiveness of our approach. Specifically, we show how the Wasserstein distance helps identify similar time-series datasets and facilitates inference performance estimation of foundation models in both out-of-distribution and transfer learning evaluation, with high correlations between our proposed measure and the inference loss (>0.60).
         ]]></description>
     </item>
     <item>
-        <title>Seeing Beyond Frames: Zero-Shot Pedestrian Intention Prediction with Raw Temporal Video and Multimodal Cues</title>
-        <link>https://arxiv.org/abs/2507.21161</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21161v1</guid>
+        <title>CTG-Insight: A Multi-Agent Interpretable LLM Framework for Cardiotocography Analysis and Classification</title>
+        <link>https://arxiv.org/abs/2507.22205</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22205v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Pallavi Zambare, Venkata Nikhil Thanikella, Ying Liu</dc:creator>
+        <dc:creator>Black Sun (Delia),  Die (Delia),  Hu</dc:creator>
         <description><![CDATA[
-            在复杂城市环境自动驾驶中，行人意图预测至关重要，传统方法依赖帧序列监督学习，适应新场景需大量再训练。为此，本文提出基于Gemini 2.5 Pro的零样本方法BF - PIP，直接从富含结构化JAAD元数据的连续短视频片段推断行人过街意图。与基于GPT - 4V的离散帧处理方法不同，它处理连续时间片段，还通过多模态提示融入边界框注释和自车速度。该方法无需额外训练，预测准确率达73%，比GPT - 4V基线高18%，提升了时空感知和模糊条件下的意图推断能力。
-            arXiv:2507.21161v1 Announce Type: new 
-Abstract: Pedestrian intention prediction is essential for autonomous driving in complex urban environments. Conventional approaches depend on supervised learning over frame sequences and require extensive retraining to adapt to new scenarios. Here, we introduce BF-PIP (Beyond Frames Pedestrian Intention Prediction), a zero-shot approach built upon Gemini 2.5 Pro. It infers crossing intentions directly from short, continuous video clips enriched with structured JAAD metadata. In contrast to GPT-4V based methods that operate on discrete frames, BF-PIP processes uninterrupted temporal clips. It also incorporates bounding-box annotations and ego-vehicle speed via specialized multimodal prompts. Without any additional training, BF-PIP achieves 73% prediction accuracy, outperforming a GPT-4V baseline by 18 %. These findings illustrate that combining temporal video inputs with contextual cues enhances spatiotemporal perception and improves intent inference under ambiguous conditions. This approach paves the way for agile, retraining-free perception module in intelligent transportation system.
+            背景：远程胎儿监测技术普及，但现有系统可解释性有限，孕妇难理解原始胎儿监护图（CTG）数据。方法：提出多智能体大语言模型系统CTG - Insight，依据医学指南将CTG轨迹分解为五项医学特征，由专门智能体分析，最终聚合智能体综合输出，给出胎儿健康分类及自然语言解释。效果：在NeuroFetalNet数据集评估，准确率达96.4%，F1得分97.8%，输出透明可解释。
+            arXiv:2507.22205v1 Announce Type: new 
+Abstract: Remote fetal monitoring technologies are becoming increasingly common. Yet, most current systems offer limited interpretability, leaving expectant parents with raw cardiotocography (CTG) data that is difficult to understand. In this work, we present CTG-Insight, a multi-agent LLM system that provides structured interpretations of fetal heart rate (FHR) and uterine contraction (UC) signals. Drawing from established medical guidelines, CTG-Insight decomposes each CTG trace into five medically defined features: baseline, variability, accelerations, decelerations, and sinusoidal pattern, each analyzed by a dedicated agent. A final aggregation agent synthesizes the outputs to deliver a holistic classification of fetal health, accompanied by a natural language explanation. We evaluate CTG-Insight on the NeuroFetalNet Dataset and compare it against deep learning models and the single-agent LLM baseline. Results show that CTG-Insight achieves state-of-the-art accuracy (96.4%) and F1-score (97.8%) while producing transparent and interpretable outputs. This work contributes an interpretable and extensible CTG analysis framework.
         ]]></description>
     </item>
     <item>
-        <title>AGORA: Incentivizing Group Emergence Capability in LLMs via Group Distillation</title>
-        <link>https://arxiv.org/abs/2507.21166</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21166v1</guid>
+        <title>Multimodal Late Fusion Model for Problem-Solving Strategy Classification in a Machine Learning Game</title>
+        <link>https://arxiv.org/abs/2507.22426</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22426v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Ren Zhuang, Ben Wang, Shuifa Sun</dc:creator>
+        <dc:creator>Clemens Witt, Thiemo Leonhardt, Nadine Bergner, Mareen Grillenberger</dc:creator>
         <description><![CDATA[
-            当前训练数据集的静态特性限制了复杂推理的进展。为此，研究提出将结构化交互作为新的扩展维度，突破增加模型参数的主流范式。其构建的自进化框架AGORA，能让协作集合体在具有挑战性的数学基准测试中，推理性能比最先进的单体系统高出至多4.45个百分点。这种提升源于群体涌现能力，即孤立模型无法实现的集体能力综合，证明了交互可作为智能的可扩展驱动力。
-            arXiv:2507.21166v1 Announce Type: new 
-Abstract: Progress in complex reasoning is constrained by the static nature of the current training datasets. We propose structured interaction as a new scaling axis, moving beyond the prevailing paradigm of increasing model parameters. Our self-evolving framework, AGORA, enables a collaborative ensemble to achieve reasoning performance exceeding state-of-the-art monolithic systems by up to 4.45 percentage points on challenging mathematical benchmarks. This gain stems from group emergent ability-the synthesis of collective capabilities unattainable by isolated models, validating interaction as a scalable driver of intelligence. Our results position the engineering of collaborative ecosystems as a vital frontier for capability emergence.
+            背景：现有机器学习模型用于数字学习环境隐性评估时，多依赖抽象游戏日志数据，会忽略与学习者认知策略相关的微妙行为线索。方法：提出多模态晚期融合模型，整合基于屏幕录像的视觉数据和结构化的游戏内动作序列，对学生的解题策略进行分类。效果：在针对149名中学生的试点研究中，此融合模型表现优于单模态基线模型，分类准确率提高超15%，凸显了多模态机器学习在交互式学习环境中的应用潜力。
+            arXiv:2507.22426v1 Announce Type: new 
+Abstract: Machine learning models are widely used to support stealth assessment in digital learning environments. Existing approaches typically rely on abstracted gameplay log data, which may overlook subtle behavioral cues linked to learners' cognitive strategies. This paper proposes a multimodal late fusion model that integrates screencast-based visual data and structured in-game action sequences to classify students' problem-solving strategies. In a pilot study with secondary school students (N=149) playing a multitouch educational game, the fusion model outperformed unimodal baseline models, increasing classification accuracy by over 15%. Results highlight the potential of multimodal ML for strategy-sensitive assessment and adaptive support in interactive learning contexts.
         ]]></description>
     </item>
     <item>
-        <title>ChartM$^3$: Benchmarking Chart Editing with Multimodal Instructions</title>
-        <link>https://arxiv.org/abs/2507.21167</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21167v1</guid>
+        <title>HGCN(O): A Self-Tuning GCN HyperModel Toolkit for Outcome Prediction in Event-Sequence Data</title>
+        <link>https://arxiv.org/abs/2507.22524</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22524v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Danglu Yang, Liang Zhang, Zihao Yue, Liangyu Chen, Yichen Xu, Wenxuan Wang, Qin Jin</dc:creator>
+        <dc:creator>Fang Wang, Paolo Ceravolo, Ernesto Damiani</dc:creator>
         <description><![CDATA[
-            背景：现有基于自然语言指令的图表编辑方法因表述模糊，难以支持细粒度编辑。方法：提出多模态图表编辑新范式，用户意图通过自然语言和视觉指标组合表达；构建新基准ChartM³及训练集ChartM³ - Train。效果：基准揭示当前多模态大语言模型存在局限，在训练集上微调模型有显著提升，证明多模态监督对构建实用图表编辑系统的重要性。
-            arXiv:2507.21167v1 Announce Type: new 
-Abstract: Charts are a fundamental visualization format widely used in data analysis across research and industry. While enabling users to edit charts based on high-level intentions is of great practical value, existing methods primarily rely on natural language instructions, which are often too ambiguous to support fine-grained editing. In this work, we introduce a novel paradigm for multimodal chart editing, where user intent is expressed through a combination of natural language and visual indicators that explicitly highlight the elements to be modified. To support this paradigm, we present Chart$\text{M}^3$, a new benchmark for Multimodal chart editing with Multi-level complexity and Multi-perspective evaluation. Chart$\text{M}^3$ contains 1,000 samples spanning four levels of editing difficulty. Each sample includes triplets in the form of (chart, code, multimodal instructions). To comprehensively evaluate chart editing models, Chart$\text{M}^3$ provides metrics that assess both visual appearance and code correctness. Our benchmark reveals significant limitations in current multimodal large language models (MLLMs), including GPT-4o, particularly in their ability to interpret and act on visual indicators. To address this, we construct Chart$\text{M}^3$-Train, a large-scale training set with 24,000 multimodal chart editing samples. Fine-tuning MLLMs on this dataset leads to substantial improvements, demonstrating the importance of multimodal supervision in building practical chart editing systems. Our datasets, codes, and evaluation tools are available at https://github.com/MLrollIT/ChartM3. %https://github.com/MLrollIT/ChartM3Our datasets, codes, and evaluation tools are available at https://github.com/yaolinli/VCE.
+            背景：在事件序列预测中，需提升预测准确性和稳定性。方法：提出HGCN(O)自调优工具包，采用图卷积网络（GCN）模型，有四种GCN架构，集成多种事件序列图表示，考虑节点和图级属性及时间依赖关系优化预测。效果：在不平衡数据上GCNConv模型表现出色，平衡数据中各模型表现一致，且HGCN(O)性能优于传统方法，可用于预测性业务流程监控。
+            arXiv:2507.22524v1 Announce Type: new 
+Abstract: We propose HGCN(O), a self-tuning toolkit using Graph Convolutional Network (GCN) models for event sequence prediction. Featuring four GCN architectures (O-GCN, T-GCN, TP-GCN, TE-GCN) across the GCNConv and GraphConv layers, our toolkit integrates multiple graph representations of event sequences with different choices of node- and graph-level attributes and in temporal dependencies via edge weights, optimising prediction accuracy and stability for balanced and unbalanced datasets. Extensive experiments show that GCNConv models excel on unbalanced data, while all models perform consistently on balanced data. Experiments also confirm the superior performance of HGCN(O) over traditional approaches. Applications include Predictive Business Process Monitoring (PBPM), which predicts future events or states of a business process based on event logs.
         ]]></description>
     </item>
     <item>
-        <title>Beyond Neural Networks: Symbolic Reasoning over Wavelet Logic Graph Signals</title>
-        <link>https://arxiv.org/abs/2507.21190</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21190v1</guid>
+        <title>CliCARE: Grounding Large Language Models in Clinical Guidelines for Decision Support over Longitudinal Cancer Electronic Health Records</title>
+        <link>https://arxiv.org/abs/2507.22533</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22533v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Andrew Kiruluta, Andreas Lemos, Priscilla Burity</dc:creator>
+        <dc:creator>Dongchen Li (College of Computer Science and Engineering, Northeastern University, Shenyang, China), Jitao Liang (College of Computer Science and Engineering, Northeastern University, Shenyang, China), Wei Li (College of Computer Science and Engineering, Northeastern University, Shenyang, China), Xiaoyu Wang (Liaoning Cancer Hospital and Institute, Shenyang, China), Longbing Cao (Macquarie University, Sydney, Australia), Kun Yu (College of Medicine and Biological Information Engineering, Northeastern University, Shenyang, China)</dc:creator>
         <description><![CDATA[
-            背景：传统基于卷积、循环或注意力的神经网络在图学习中有局限。方法：提出基于图拉普拉斯小波变换的非神经学习框架，在图谱域利用结构化多尺度滤波、非线性收缩和小波系数符号逻辑处理，通过特定领域符号语言支持组合推理。效果：在合成图去噪和语言标记图实验中，相比轻量级图神经网络表现相当，且具有更高透明度和效率，为图学习提供了新选择。
-            arXiv:2507.21190v1 Announce Type: new 
-Abstract: We present a fully non neural learning framework based on Graph Laplacian Wavelet Transforms (GLWT). Unlike traditional architectures that rely on convolutional, recurrent, or attention based neural networks, our model operates purely in the graph spectral domain using structured multiscale filtering, nonlinear shrinkage, and symbolic logic over wavelet coefficients. Signals defined on graph nodes are decomposed via GLWT, modulated with interpretable nonlinearities, and recombined for downstream tasks such as denoising and token classification. The system supports compositional reasoning through a symbolic domain-specific language (DSL) over graph wavelet activations. Experiments on synthetic graph denoising and linguistic token graphs demonstrate competitive performance against lightweight GNNs with far greater transparency and efficiency. This work proposes a principled, interpretable, and resource-efficient alternative to deep neural architectures for learning on graphs.
+            大语言模型用于临床决策支持有潜力，但存在无法有效处理患者记录、临床幻觉风险高、评估指标不可靠等问题。为此提出CliCARE框架，将非结构化纵向电子健康记录转化为特定患者时间知识图谱，通过对齐真实患者轨迹和规范指南知识图谱来提供决策支持。用中国癌症数据集和公开英语MIMIC - IV数据集验证，该框架显著优于基线方法，结果与肿瘤专家评估高度相关。
+            arXiv:2507.22533v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) hold significant promise for improving clinical decision support and reducing physician burnout by synthesizing complex, longitudinal cancer Electronic Health Records (EHRs). However, their implementation in this critical field faces three primary challenges: the inability to effectively process the extensive length and multilingual nature of patient records for accurate temporal analysis; a heightened risk of clinical hallucination, as conventional grounding techniques such as Retrieval-Augmented Generation (RAG) do not adequately incorporate process-oriented clinical guidelines; and unreliable evaluation metrics that hinder the validation of AI systems in oncology. To address these issues, we propose CliCARE, a framework for Grounding Large Language Models in Clinical Guidelines for Decision Support over Longitudinal Cancer Electronic Health Records. The framework operates by transforming unstructured, longitudinal EHRs into patient-specific Temporal Knowledge Graphs (TKGs) to capture long-range dependencies, and then grounding the decision support process by aligning these real-world patient trajectories with a normative guideline knowledge graph. This approach provides oncologists with evidence-grounded decision support by generating a high-fidelity clinical summary and an actionable recommendation. We validated our framework using large-scale, longitudinal data from a private Chinese cancer dataset and the public English MIMIC-IV dataset. In these diverse settings, CliCARE significantly outperforms strong baselines, including leading long-context LLMs and Knowledge Graph-enhanced RAG methods. The clinical validity of our results is supported by a robust evaluation protocol, which demonstrates a high correlation with assessments made by expert oncologists.
         ]]></description>
     </item>
     <item>
-        <title>Advancing Compositional LLM Reasoning with Structured Task Relations in Interactive Multimodal Communications</title>
-        <link>https://arxiv.org/abs/2507.21199</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21199v1</guid>
+        <title>From Sufficiency to Reflection: Reinforcement-Guided Thinking Quality in Retrieval-Augmented Reasoning for LLMs</title>
+        <link>https://arxiv.org/abs/2507.22716</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22716v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Xinye Cao, Hongcan Guo, Guoshun Nan, Jiaoyang Cui, Haoting Qian, Yihan Lin, Yilin Peng, Diyang Zhang, Yanzhao Hou, Huici Wu, Xiaofeng Tao, Tony Q. S. Quek</dc:creator>
+        <dc:creator>Jie He, Victor Gutierrez Basulto, Jeff Z. Pan</dc:creator>
         <description><![CDATA[
-            这是一篇关于交互式多模态通信中组合式大语言模型推理的研究。背景是交互式多模态应用需整合多形式数据，现有方法依赖多个大语言模型。方法上，提出ContextLoRA，通过构建任务依赖图引导大语言模型学习结构化上下文，还设计逐步微调程序；引入ContextGear调度策略优化训练。效果上，在三个基准测试中表现优越，在真实无线测试平台验证了实用性，代码将开源。
-            arXiv:2507.21199v1 Announce Type: new 
-Abstract: Interactive multimodal applications (IMAs), such as route planning in the Internet of Vehicles, enrich users' personalized experiences by integrating various forms of data over wireless networks. Recent advances in large language models (LLMs) utilize mixture-of-experts (MoE) mechanisms to empower multiple IMAs, with each LLM trained individually for a specific task that presents different business workflows. In contrast to existing approaches that rely on multiple LLMs for IMAs, this paper presents a novel paradigm that accomplishes various IMAs using a single compositional LLM over wireless networks. The two primary challenges include 1) guiding a single LLM to adapt to diverse IMA objectives and 2) ensuring the flexibility and efficiency of the LLM in resource-constrained mobile environments. To tackle the first challenge, we propose ContextLoRA, a novel method that guides an LLM to learn the rich structured context among IMAs by constructing a task dependency graph. We partition the learnable parameter matrix of neural layers for each IMA to facilitate LLM composition. Then, we develop a step-by-step fine-tuning procedure guided by task relations, including training, freezing, and masking phases. This allows the LLM to learn to reason among tasks for better adaptation, capturing the latent dependencies between tasks. For the second challenge, we introduce ContextGear, a scheduling strategy to optimize the training procedure of ContextLoRA, aiming to minimize computational and communication costs through a strategic grouping mechanism. Experiments on three benchmarks show the superiority of the proposed ContextLoRA and ContextGear. Furthermore, we prototype our proposed paradigm on a real-world wireless testbed, demonstrating its practical applicability for various IMAs. We will release our code to the community.
+            背景：基于强化学习的检索增强生成（RAG）方法能提升大语言模型推理能力，但现有方法多只关注最终答案奖励，忽略中间推理质量。方法：本文提出TIRESRAG - R1框架，采用思考 - 检索 - 反思过程和多维奖励系统，设充足性、推理质量、反思三个奖励，还使用难度感知重加权策略和训练样本过滤。效果：在四个多跳问答数据集实验显示，TIRESRAG - R1优于现有RAG方法，且能良好泛化到单跳任务。
+            arXiv:2507.22716v1 Announce Type: new 
+Abstract: Reinforcement learning-based retrieval-augmented generation (RAG) methods enhance the reasoning abilities of large language models (LLMs). However, most rely only on final-answer rewards, overlooking intermediate reasoning quality. This paper analyzes existing RAG reasoning models and identifies three main failure patterns: (1) information insufficiency, meaning the model fails to retrieve adequate support; (2) faulty reasoning, where logical or content-level flaws appear despite sufficient information; and (3) answer-reasoning inconsistency, where a valid reasoning chain leads to a mismatched final answer. We propose TIRESRAG-R1, a novel framework using a think-retrieve-reflect process and a multi-dimensional reward system to improve reasoning and stability. TIRESRAG-R1 introduces: (1) a sufficiency reward to encourage thorough retrieval; (2) a reasoning quality reward to assess the rationality and accuracy of the reasoning chain; and (3) a reflection reward to detect and revise errors. It also employs a difficulty-aware reweighting strategy and training sample filtering to boost performance on complex tasks. Experiments on four multi-hop QA datasets show that TIRESRAG-R1 outperforms prior RAG methods and generalizes well to single-hop tasks. The code and data are available at: https://github.com/probe2/TIRESRAG-R1.
         ]]></description>
     </item>
     <item>
-        <title>StructText: A Synthetic Table-to-Text Approach for Benchmark Generation with Multi-Dimensional Evaluation</title>
-        <link>https://arxiv.org/abs/2507.21340</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21340v1</guid>
+        <title>Beyond Natural Language Plans: Structure-Aware Planning for Query-Focused Table Summarization</title>
+        <link>https://arxiv.org/abs/2507.22829</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22829v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Satyananda Kashyap, Sola Shirai, Nandana Mihindukulasooriya, Horst Samulowitz</dc:creator>
+        <dc:creator>Weijia Zhang, Songgaojun Deng, Evangelos Kanoulas</dc:creator>
         <description><![CDATA[
-            从文本中提取结构化信息在企业场景很有用，但缺乏评估大语言模型提取质量的基准。手动构建基准耗力且限制规模。本文提出StructText框架，利用现有表格数据自动生成高保真基准。采用“先规划后执行”的两阶段流程合成自然语言文本，并引入多维评估策略。在71,539个示例、49个数据集上评估，结果显示大模型事实准确性高、避免幻觉，但生成文本的叙事连贯性差，数值和时间信息难自动提取。研究还发布框架支持后续研究。
-            arXiv:2507.21340v1 Announce Type: new 
-Abstract: Extracting structured information from text, such as key-value pairs that could augment tabular data, is quite useful in many enterprise use cases. Although large language models (LLMs) have enabled numerous automated pipelines for converting natural language into structured formats, there is still a lack of benchmarks for evaluating their extraction quality, especially in specific domains or focused documents specific to a given organization. Building such benchmarks by manual annotations is labour-intensive and limits the size and scalability of the benchmarks. In this work, we present StructText, an end-to-end framework for automatically generating high-fidelity benchmarks for key-value extraction from text using existing tabular data. It uses available tabular data as structured ground truth, and follows a two-stage ``plan-then-execute'' pipeline to synthetically generate corresponding natural-language text. To ensure alignment between text and structured source, we introduce a multi-dimensional evaluation strategy that combines (a) LLM-based judgments on factuality, hallucination, and coherence and (b) objective extraction metrics measuring numeric and temporal accuracy. We evaluated the proposed method on 71,539 examples across 49 datasets. Results reveal that while LLMs achieve strong factual accuracy and avoid hallucination, they struggle with narrative coherence in producing extractable text. Notably, models presume numerical and temporal information with high fidelity yet this information becomes embedded in narratives that resist automated extraction. We release a framework, including datasets, evaluation tools, and baseline extraction systems, to support continued research.
+            查询聚焦的表格摘要需要复杂推理，以往使用自然语言（NL）计划存在模糊性和缺乏结构的问题，限制了其转换为SQL等可执行程序和可扩展性。为此，本文提出范式转变，采用结构化表示。引入新的结构化计划TaSoF，以及框架SPaGe，其推理过程分三步：结构化规划、基于图的执行和摘要生成。该方法能明确捕捉复杂依赖、提高可靠性。在三个公开基准上实验表明，SPaGe在单表和多表场景均优于先前模型。
+            arXiv:2507.22829v1 Announce Type: new 
+Abstract: Query-focused table summarization requires complex reasoning, often approached through step-by-step natural language (NL) plans. However, NL plans are inherently ambiguous and lack structure, limiting their conversion into executable programs like SQL and hindering scalability, especially for multi-table tasks. To address this, we propose a paradigm shift to structured representations. We introduce a new structured plan, TaSoF, inspired by formalism in traditional multi-agent systems, and a framework, SPaGe, that formalizes the reasoning process in three phases: 1) Structured Planning to generate TaSoF from a query, 2) Graph-based Execution to convert plan steps into SQL and model dependencies via a directed cyclic graph for parallel execution, and 3) Summary Generation to produce query-focused summaries. Our method explicitly captures complex dependencies and improves reliability. Experiments on three public benchmarks show that SPaGe consistently outperforms prior models in both single- and multi-table settings, demonstrating the advantages of structured representations for robust and scalable summarization.
         ]]></description>
     </item>
     <item>
-        <title>Sync-TVA: A Graph-Attention Framework for Multimodal Emotion Recognition with Cross-Modal Fusion</title>
-        <link>https://arxiv.org/abs/2507.21395</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21395v1</guid>
+        <title>Breaking Obfuscation: Cluster-Aware Graph with LLM-Aided Recovery for Malicious JavaScript Detection</title>
+        <link>https://arxiv.org/abs/2507.22447</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22447v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Zeyu Deng, Yanhui Lu, Jiashu Liao, Shuang Wu, Chongfeng Wei</dc:creator>
+        <dc:creator>Zhihong Liang, Xin Wang, Zhenhuang Hu, Liangliang Song, Lin Chen, Jingjing Guo, Yanbin Wang, Ye Tian</dc:creator>
         <description><![CDATA[
-            多模态情感识别对构建能感知和响应人类情绪的智能系统至关重要，但现有方法存在跨模态交互有限和模态贡献不均衡的问题。为此，本文提出Sync-TVA框架，该框架具有特定模态动态增强和结构化跨模态融合特点。它为各模态设计动态增强模块，构建异质跨模态图以建模文本、音频和视觉特征间语义关系，用交叉注意力融合机制对齐多模态线索。在MELD和IEMOCAP数据集上实验显示，相比现有模型，其准确率和加权F1分数均有提升，尤其在类别不平衡条件下。
-            arXiv:2507.21395v1 Announce Type: new 
-Abstract: Multimodal emotion recognition (MER) is crucial for enabling emotionally intelligent systems that perceive and respond to human emotions. However, existing methods suffer from limited cross-modal interaction and imbalanced contributions across modalities. To address these issues, we propose Sync-TVA, an end-to-end graph-attention framework featuring modality-specific dynamic enhancement and structured cross-modal fusion. Our design incorporates a dynamic enhancement module for each modality and constructs heterogeneous cross-modal graphs to model semantic relations across text, audio, and visual features. A cross-attention fusion mechanism further aligns multimodal cues for robust emotion inference. Experiments on MELD and IEMOCAP demonstrate consistent improvements over state-of-the-art models in both accuracy and weighted F1 score, especially under class-imbalanced conditions.
+            随着基于网络的应用和云服务快速发展，恶意 JavaScript 代码威胁大，且因复杂混淆技术及语言特性，检测困难。本文提出融合大语言模型反混淆和代码图学习的混合防御框架 DeCoda：先用多阶段细化提示学习管道让 LLM 重建代码结构并生成规范化的抽象语法树表征；再通过聚合图学习分层代码图表征，兼顾局部语义与全局结构关系。实验表明，在两个基准集上 F1 得分达 94.64%和 97.71%，比基线提升显著，在假阳性控制评估中真阳性率也更高。
+            arXiv:2507.22447v1 Announce Type: cross 
+Abstract: With the rapid expansion of web-based applications and cloud services, malicious JavaScript code continues to pose significant threats to user privacy, system integrity, and enterprise security. But, detecting such threats remains challenging due to sophisticated code obfuscation techniques and JavaScript's inherent language characteristics, particularly its nested closure structures and syntactic flexibility. In this work, we propose DeCoda, a hybrid defense framework that combines large language model (LLM)-based deobfuscation with code graph learning: (1) We first construct a sophisticated prompt-learning pipeline with multi-stage refinement, where the LLM progressively reconstructs the original code structure from obfuscated inputs and then generates normalized Abstract Syntax Tree (AST) representations; (2) In JavaScript ASTs, dynamic typing scatters semantically similar nodes while deeply nested functions fracture scope capturing, introducing structural noise and semantic ambiguity. To address these challenges, we then propose to learn hierarchical code graph representations via a Cluster-wise Graph that synergistically integrates graph transformer network, node clustering, and node-to-cluster attention to simultaneously capture both local node-level semantics and global cluster-induced structural relationships from AST graph. Experimental results demonstrate that our method achieves F1-scores of 94.64% and 97.71% on two benchmark datasets, demonstrating absolute improvements of 10.74% and 13.85% over state-of-the-art baselines. In false-positive control evaluation at fixed FPR levels (0.0001, 0.001, 0.01), our approach delivers 4.82, 5.91, and 2.53 higher TPR respectively compared to the best-performing baseline. These results highlight the effectiveness of LLM-based deobfuscation and underscore the importance of modeling cluster-level relationships in detecting malicious code.
         ]]></description>
     </item>
     <item>
-        <title>Describe, Adapt and Combine: Empowering CLIP Encoders for Open-set 3D Object Retrieval</title>
-        <link>https://arxiv.org/abs/2507.21489</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21489v1</guid>
+        <title>GeoOutageKG: A Multimodal Geospatiotemporal Knowledge Graph for Multiresolution Power Outage Analysis</title>
+        <link>https://arxiv.org/abs/2507.22878</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22878v1</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Zhichuan Wang, Yang Zhou, Zhe Liu, Rui Yu, Song Bai, Yulong Wang, Xinwei He, Xiang Bai</dc:creator>
+        <dc:creator>Ethan Frakes, Yinghui Wu, Roger H. French, Mengjie Li</dc:creator>
         <description><![CDATA[
-            开放集3D对象检索是新兴任务，现有方法因3D训练数据不足难以生成通用表示。本文提出“描述、适配和组合”（DAC）框架，仅采用多视图图像用于该任务。DAC将CLIP模型与多模态大语言模型（MLLM）结合学习通用3D表示，MLLM用于描述类别信息和提供未知对象提示。还引入AB - LoRA减轻过拟合。该方法在四个数据集上平均mAP比先前方法高10.01%，泛化能力也得到验证。
-            arXiv:2507.21489v1 Announce Type: new 
-Abstract: Open-set 3D object retrieval (3DOR) is an emerging task aiming to retrieve 3D objects of unseen categories beyond the training set. Existing methods typically utilize all modalities (i.e., voxels, point clouds, multi-view images) and train specific backbones before fusion. However, they still struggle to produce generalized representations due to insufficient 3D training data. Being contrastively pre-trained on web-scale image-text pairs, CLIP inherently produces generalized representations for a wide range of downstream tasks. Building upon it, we present a simple yet effective framework named Describe, Adapt and Combine (DAC) by taking only multi-view images for open-set 3DOR. DAC innovatively synergizes a CLIP model with a multi-modal large language model (MLLM) to learn generalized 3D representations, where the MLLM is used for dual purposes. First, it describes the seen category information to align with CLIP's training objective for adaptation during training. Second, it provides external hints about unknown objects complementary to visual cues during inference. To improve the synergy, we introduce an Additive-Bias Low-Rank adaptation (AB-LoRA), which alleviates overfitting and further enhances the generalization to unseen categories. With only multi-view images, DAC significantly surpasses prior arts by an average of +10.01\% mAP on four open-set 3DOR datasets. Moreover, its generalization is also validated on image-based and cross-dataset setups. Code is available at https://github.com/wangzhichuan123/DAC.
+            背景：检测、分析和预测停电对电网风险评估和减灾至关重要，现有停电数据空间分辨率受限，而夜间灯光卫星图像数据空间分辨率高但时间粒度低。方法：提出多模态知识图谱GeoOutageKG，整合夜间灯光卫星图像等多源数据，并通过与GeoOutageOnto本体对齐来构建。效果：GeoOutageKG包含超1060万停电记录、30万张图像和1.5万张停电地图，是可复用资源，可用于时空停电的多分辨率分析。
+            arXiv:2507.22878v1 Announce Type: cross 
+Abstract: Detecting, analyzing, and predicting power outages is crucial for grid risk assessment and disaster mitigation. Numerous outages occur each year, exacerbated by extreme weather events such as hurricanes. Existing outage data are typically reported at the county level, limiting their spatial resolution and making it difficult to capture localized patterns. However, it offers excellent temporal granularity. In contrast, nighttime light satellite image data provides significantly higher spatial resolution and enables a more comprehensive spatial depiction of outages, enhancing the accuracy of assessing the geographic extent and severity of power loss after disaster events. However, these satellite data are only available on a daily basis. Integrating spatiotemporal visual and time-series data sources into a unified knowledge representation can substantially improve power outage detection, analysis, and predictive reasoning. In this paper, we propose GeoOutageKG, a multimodal knowledge graph that integrates diverse data sources, including nighttime light satellite image data, high-resolution spatiotemporal power outage maps, and county-level timeseries outage reports in the U.S. We describe our method for constructing GeoOutageKG by aligning source data with a developed ontology, GeoOutageOnto. Currently, GeoOutageKG includes over 10.6 million individual outage records spanning from 2014 to 2024, 300,000 NTL images spanning from 2012 to 2024, and 15,000 outage maps. GeoOutageKG is a novel, modular and reusable semantic resource that enables robust multimodal data integration. We demonstrate its use through multiresolution analysis of geospatiotemporal power outages.
         ]]></description>
     </item>
     <item>
-        <title>MAGIC: A Multi-Hop and Graph-Based Benchmark for Inter-Context Conflicts in Retrieval-Augmented Generation</title>
-        <link>https://arxiv.org/abs/2507.21544</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21544v1</guid>
+        <title>Hyperbolic Graph Learning: A Comprehensive Review</title>
+        <link>https://arxiv.org/abs/2202.13852</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2202.13852v3</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Jungyeon Lee, Kangmin Lee, Taeuk Kim</dc:creator>
+        <dc:creator>Menglin Yang, Min Zhou, Tong Zhang, Jiahong Liu, Zhihao Li, Lujia Pan, Hui Xiong, Irwin King</dc:creator>
         <description><![CDATA[
-            背景：检索增强生成（RAG）系统常出现知识冲突问题，现有相关基准存在聚焦问答场景、依赖实体替换技术、冲突类型有限等局限。方法：提出基于知识图（KG）的框架，利用KG的显式关系结构生成不同且微妙的冲突，同时保证可解释性。效果：在MAGIC基准上的实验显示，开源和专有模型在冲突检测上存在困难，尤其是多跳推理时，常无法找出矛盾的确切来源，研究为提升大语言模型整合信息能力奠定基础。
-            arXiv:2507.21544v1 Announce Type: new 
-Abstract: Knowledge conflict often arises in retrieval-augmented generation (RAG) systems, where retrieved documents may be inconsistent with one another or contradict the model's parametric knowledge. Existing benchmarks for investigating the phenomenon have notable limitations, including a narrow focus on the question answering setup, heavy reliance on entity substitution techniques, and a restricted range of conflict types. To address these issues, we propose a knowledge graph (KG)-based framework that generates varied and subtle conflicts between two similar yet distinct contexts, while ensuring interpretability through the explicit relational structure of KGs. Experimental results on our benchmark, MAGIC, provide intriguing insights into the inner workings of LLMs regarding knowledge conflict: both open-source and proprietary models struggle with conflict detection -- especially when multi-hop reasoning is required -- and often fail to pinpoint the exact source of contradictions. Finally, we present in-depth analyses that serve as a foundation for improving LLMs in integrating diverse, sometimes even conflicting, information.
+            欧氏空间的图表示学习难以有效捕捉现实数据中的层次和复杂关系结构，双曲几何为学习丰富图表示提供新选择。该论文全面综述了双曲图学习领域，将现有方法分为基于双曲图嵌入、基于图神经网络的双曲模型等三类。广泛探讨了其在推荐系统、知识图谱等多领域的应用，体现了双曲几何在图学习任务中的有效性。同时，指出了处理复杂结构、结合大语言模型等挑战及研究方向。
+            arXiv:2202.13852v3 Announce Type: replace 
+Abstract: Graph representation learning in Euclidean space, despite its widespread adoption and proven utility in many domains, often struggles to effectively capture the inherent hierarchical and complex relational structures prevalent in real-world data, particularly for datasets exhibiting a highly non-Euclidean latent anatomy or power-law distributions. Hyperbolic geometry, with its constant negative curvature and exponential growth property, naturally accommodates such structures, offering a promising alternative for learning rich graph representations. This survey paper provides a comprehensive review of the rapidly evolving field of Hyperbolic Graph Learning (HGL). We systematically categorize and analyze existing methods broadly dividing them into (1) hyperbolic graph embedding-based techniques, (2) graph neural network-based hyperbolic models, and (3) emerging paradigms. Beyond methodologies, we extensively discuss diverse applications of HGL across multiple domains, including recommender systems, knowledge graphs, bioinformatics, and other relevant scenarios, demonstrating the broad applicability and effectiveness of hyperbolic geometry in real-world graph learning tasks. Most importantly, we identify several key challenges that serve as directions for advancing HGL, including handling complex data structures, developing geometry-aware learning objectives, ensuring trustworthy and scalable implementations, and integrating with foundation models, e.g., large language models. We highlight promising research opportunities in this exciting interdisciplinary area. A comprehensive repository can be found at https://github.com/digailab/awesome-hyperbolic-graph-learning.
         ]]></description>
     </item>
     <item>
-        <title>Hyperbolic Genome Embeddings</title>
-        <link>https://arxiv.org/abs/2507.21648</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21648v1</guid>
+        <title>Rationale-guided Prompting for Knowledge-based Visual Question Answering</title>
+        <link>https://arxiv.org/abs/2412.16936</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2412.16936v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Raiyan R. Khan, Philippe Chlenski, Itsik Pe'er</dc:creator>
+        <dc:creator>Zhongjian Hu, Peng Yang, Bing Li, Fengyuan Liu</dc:creator>
         <description><![CDATA[
-            背景：当前基因组序列建模方法难以将机器学习模型的归纳偏置与生物系统的进化结构对齐。方法：提出双曲CNN的新应用，利用生物系统结构，实现更具表现力的DNA序列表示，且无需明确的系统发育映射。效果：在42个基因组解释基准数据集中的37个上，双曲模型优于欧几里得模型；在7个GUE基准数据集上超越了现有最佳性能，使用更少参数且无需预训练。还创建了新的基准数据集。
-            arXiv:2507.21648v1 Announce Type: new 
-Abstract: Current approaches to genomic sequence modeling often struggle to align the inductive biases of machine learning models with the evolutionarily-informed structure of biological systems. To this end, we formulate a novel application of hyperbolic CNNs that exploits this structure, enabling more expressive DNA sequence representations. Our strategy circumvents the need for explicit phylogenetic mapping while discerning key properties of sequences pertaining to core functional and regulatory behavior. Across 37 out of 42 genome interpretation benchmark datasets, our hyperbolic models outperform their Euclidean equivalents. Notably, our approach even surpasses state-of-the-art performance on seven GUE benchmark datasets, consistently outperforming many DNA language models while using orders of magnitude fewer parameters and avoiding pretraining. Our results include a novel set of benchmark datasets--the Transposable Elements Benchmark--which explores a major but understudied component of the genome with deep evolutionary significance. We further motivate our work by exploring how our hyperbolic models recognize genomic signal under various data-generating conditions and by constructing an empirical method for interpreting the hyperbolicity of dataset embeddings. Throughout these assessments, we find persistent evidence highlighting the potential of our hyperbolic framework as a robust paradigm for genome representation learning. Our code and benchmark datasets are available at https://github.com/rrkhan/HGE.
+            背景：当前大语言模型用于基于知识的视觉问答（VQA）时，先前方法多直接提示模型预测答案，忽视中间思考过程，未充分激活模型能力。方法：提出名为PLRH的框架，用思维链（CoT）提示大语言模型生成基本原理启发式，即中间思考过程，再利用其启发模型预测答案。效果：实验显示，该方法在OK - VQA和A - OKVQA上分别比现有基线高出2.2和2.1以上。
+            arXiv:2412.16936v2 Announce Type: replace 
+Abstract: Recently, Large Language Models (LLMs) have been used for knowledge-based Visual Question Answering (VQA). Despite the encouraging results of previous studies, prior methods prompt LLMs to predict answers directly, neglecting intermediate thought processes. We argue that prior methods do not sufficiently activate the capacities of LLMs. We propose a framework called PLRH that Prompts LLMs with Rationale Heuristics for knowledge-based VQA. The PLRH prompts LLMs with Chain of Thought (CoT) to generate rationale heuristics, i.e., intermediate thought processes, and then leverages the rationale heuristics to inspire LLMs to predict answers. Experiments show that our approach outperforms the existing baselines by more than 2.2 and 2.1 on OK-VQA and A-OKVQA, respectively.
         ]]></description>
     </item>
     <item>
-        <title>UnsafeChain: Enhancing Reasoning Model Safety via Hard Cases</title>
-        <link>https://arxiv.org/abs/2507.21652</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21652v1</guid>
+        <title>Lightweight Online Adaption for Time Series Foundation Model Forecasts</title>
+        <link>https://arxiv.org/abs/2502.12920</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2502.12920v3</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Raj Vardhan Tomar, Preslav Nakov, Yuxia Wang</dc:creator>
+        <dc:creator>Thomas L. Lee, William Toner, Rajkarn Singh, Artjom Joosen, Martin Asenov</dc:creator>
         <description><![CDATA[
-            随着大型推理模型能力增强，思维链推理带来新的安全挑战。现有基于SFT的安全对齐研究多关注过滤有安全高质量回复的提示，忽略了总是引出有害输出的难题提示。为此提出UnsafeChain，这是一个由多源难题提示构建的安全对齐数据集，识别不安全补全并明确纠正为安全回复。在该数据集上微调三个大型推理模型，在多个基准测试中，UnsafeChain始终优于先前数据集，1K子集也能达到或超越基线性能，证明了基于纠正的监督的有效性和泛化性。
-            arXiv:2507.21652v1 Announce Type: new 
-Abstract: As large reasoning models (LRMs) grow more capable, chain-of-thought (CoT) reasoning introduces new safety challenges. Existing SFT-based safety alignment studies dominantly focused on filtering prompts with safe, high-quality responses, while overlooking hard prompts that always elicit harmful outputs. To fill this gap, we introduce UnsafeChain, a safety alignment dataset constructed from hard prompts with diverse sources, where unsafe completions are identified and explicitly corrected into safe responses. By exposing models to unsafe behaviors and guiding their correction, UnsafeChain enhances safety while preserving general reasoning ability. We fine-tune three LRMs on UnsafeChain and compare them against recent SafeChain and STAR-1 across six out-of-distribution and five in-distribution benchmarks. UnsafeChain consistently outperforms prior datasets, with even a 1K subset matching or surpassing baseline performance, demonstrating the effectiveness and generalizability of correction-based supervision. We release our dataset and code at https://github.com/mbzuai-nlp/UnsafeChain
+            背景：基础模型用于时间序列预测时，因在线学习计算成本高，部署时通常固定，无法根据新数据调整预测。方法：提出ELF机制，包含学习当前数据分布的ELF - Forecaster和融合基础模型与ELF - Forecaster预测结果的ELF - Weighter。效果：在多个标准时间序列数据集上与多个基础模型结合评估，结果显示使用ELF能提升预测性能，证明有效利用在线反馈可改善基础模型预测效果。
+            arXiv:2502.12920v3 Announce Type: replace 
+Abstract: Foundation models (FMs) have emerged as a promising approach for time series forecasting. While effective, FMs typically remain fixed during deployment due to the high computational costs of learning them online. Consequently, deployed FMs fail to adapt their forecasts to current data characteristics, despite the availability of online feedback from newly arriving data. This raises the question of whether FM performance can be enhanced by the efficient usage of this feedback. We propose ELF to answer this question. ELF is a lightweight mechanism for the online adaption of FM forecasts in response to online feedback. ELF consists of two parts: a) the ELF-Forecaster which is used to learn the current data distribution; and b) the ELF-Weighter which is used to combine the forecasts of the FM and the ELF-Forecaster. We evaluate the performance of ELF in conjunction with several recent FMs across a suite of standard time series datasets. In all of our experiments we find that using ELF improves performance. This work demonstrates how efficient usage of online feedback can be used to improve FM forecasts.
         ]]></description>
     </item>
     <item>
-        <title>DGP: A Dual-Granularity Prompting Framework for Fraud Detection with Graph-Enhanced LLMs</title>
-        <link>https://arxiv.org/abs/2507.21653</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21653v1</guid>
+        <title>Cross-Modal State-Space Graph Reasoning for Structured Summarization</title>
+        <link>https://arxiv.org/abs/2503.20988</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2503.20988v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Yuan Li, Jun Hu, Bryan Hooi, Bingsheng He, Cheng Chen</dc:creator>
+        <dc:creator>Hannah Kim, Sofia Martinez, Jason Lee</dc:creator>
         <description><![CDATA[
-            现实中欺诈检测应用可借助图学习技术结合节点特征与图结构信息。图增强大语言模型（Graph - Enhanced LLMs）将图信息转换为提示，利用大模型对文本和结构信息的推理能力，但纯文本提示在异构欺诈检测图中存在问题，会因多跳关系导致信息过载。为此提出双粒度提示（DGP）框架，保留目标节点细粒度文本细节，将邻居信息总结为粗粒度提示，并针对不同数据模态采用定制策略。实验表明，DGP能在可控令牌预算内，使欺诈检测性能（AUPRC）比现有方法最高提升6.8%。
-            arXiv:2507.21653v1 Announce Type: new 
-Abstract: Real-world fraud detection applications benefit from graph learning techniques that jointly exploit node features, often rich in textual data, and graph structural information. Recently, Graph-Enhanced LLMs emerge as a promising graph learning approach that converts graph information into prompts, exploiting LLMs' ability to reason over both textual and structural information. Among them, text-only prompting, which converts graph information to prompts consisting solely of text tokens, offers a solution that relies only on LLM tuning without requiring additional graph-specific encoders. However, text-only prompting struggles on heterogeneous fraud-detection graphs: multi-hop relations expand exponentially with each additional hop, leading to rapidly growing neighborhoods associated with dense textual information. These neighborhoods may overwhelm the model with long, irrelevant content in the prompt and suppress key signals from the target node, thereby degrading performance. To address this challenge, we propose Dual Granularity Prompting (DGP), which mitigates information overload by preserving fine-grained textual details for the target node while summarizing neighbor information into coarse-grained text prompts. DGP introduces tailored summarization strategies for different data modalities, bi-level semantic abstraction for textual fields and statistical aggregation for numerical features, enabling effective compression of verbose neighbor content into concise, informative prompts. Experiments across public and industrial datasets demonstrate that DGP operates within a manageable token budget while improving fraud detection performance by up to 6.8% (AUPRC) over state-of-the-art methods, showing the potential of Graph-Enhanced LLMs for fraud detection.
+            从大规模多模态数据中提取简洁且有意义的摘要，对众多应用至关重要，但此前跨模态摘要方法存在计算开销大、可解释性有限等问题。本文提出Cross - Modal State - Space Graph Reasoning（CSS - GR）框架，结合状态空间模型和基于图的消息传递，构建能捕捉模态间和模态内关系的图，进行更全面推理。经标准多模态摘要基准验证，该方法显著提升摘要质量和可解释性，还保持计算效率，文中也做了消融研究。
+            arXiv:2503.20988v2 Announce Type: replace 
+Abstract: The ability to extract compact, meaningful summaries from large-scale and multimodal data is critical for numerous applications, ranging from video analytics to medical reports. Prior methods in cross-modal summarization have often suffered from high computational overheads and limited interpretability. In this paper, we propose a \textit{Cross-Modal State-Space Graph Reasoning} (\textbf{CSS-GR}) framework that incorporates a state-space model with graph-based message passing, inspired by prior work on efficient state-space models. Unlike existing approaches relying on purely sequential models, our method constructs a graph that captures inter- and intra-modal relationships, allowing more holistic reasoning over both textual and visual streams. We demonstrate that our approach significantly improves summarization quality and interpretability while maintaining computational efficiency, as validated on standard multimodal summarization benchmarks. We also provide a thorough ablation study to highlight the contributions of each component.
         ]]></description>
     </item>
     <item>
-        <title>Distribution-Based Masked Medical Vision-Language Model Using Structured Reports</title>
-        <link>https://arxiv.org/abs/2507.21794</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21794v1</guid>
+        <title>Adaptive State-Space Mamba for Real-Time Sensor Data Anomaly Detection</title>
+        <link>https://arxiv.org/abs/2503.22743</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2503.22743v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Shreyank N Gowda, Ruichi Zhang, Xiao Gu, Ying Weng, Lu Yang</dc:creator>
+        <dc:creator>Alice Zhang, Chao Li</dc:creator>
         <description><![CDATA[
-            背景：医学图像语言预训练旨在对齐医学图像与临床相关文本，但现有模型难应对医学数据的多变性和模糊性。方法：提出一种不确定性感知的医学图像文本预训练模型，以胸部X光片为重点，利用大语言模型生成的结构化文本报告为图像数据增添临床相关上下文，通过对模态间和模态内的不确定性建模，捕捉医学图像和文本的模糊性。效果：在多个下游任务中取得了最先进的性能，显著提升了医学图像分析的泛化能力。
-            arXiv:2507.21794v1 Announce Type: new 
-Abstract: Medical image-language pre-training aims to align medical images with clinically relevant text to improve model performance on various downstream tasks. However, existing models often struggle with the variability and ambiguity inherent in medical data, limiting their ability to capture nuanced clinical information and uncertainty. This work introduces an uncertainty-aware medical image-text pre-training model that enhances generalization capabilities in medical image analysis. Building on previous methods and focusing on Chest X-Rays, our approach utilizes structured text reports generated by a large language model (LLM) to augment image data with clinically relevant context. These reports begin with a definition of the disease, followed by the `appearance' section to highlight critical regions of interest, and finally `observations' and `verdicts' that ground model predictions in clinical semantics. By modeling both inter- and intra-modal uncertainty, our framework captures the inherent ambiguity in medical images and text, yielding improved representations and performance on downstream tasks. Our model demonstrates significant advances in medical image-text pre-training, obtaining state-of-the-art performance on multiple downstream tasks.
+            背景：状态空间建模在自然语言处理等序列分析任务中作用显著，现有方法多用于图像处理等，在传感器数据流异常检测领域较少。方法：提出Adaptive State-Space Mamba（ASSM）框架，引入自适应门控机制，基于上下文和统计线索动态调整隐藏状态更新。效果：在真实和合成传感器数据集上实验表明，该方法比现有基线检测性能更优，且易扩展到其他需快速可靠检测的时间序列任务。
+            arXiv:2503.22743v2 Announce Type: replace 
+Abstract: State-space modeling has emerged as a powerful paradigm for sequence analysis in various tasks such as natural language processing, time-series forecasting, and signal processing. In this work, we propose an \emph{Adaptive State-Space Mamba} (\textbf{ASSM}) framework for real-time sensor data anomaly detection. While state-space models have been previously employed for image processing applications (e.g., style transfer \cite{wang2024stylemamba}), our approach leverages the core idea of sequential hidden states to tackle a significantly different domain: detecting anomalies on streaming sensor data.
+  In particular, we introduce an adaptive gating mechanism that dynamically modulates the hidden state update based on contextual and learned statistical cues. This design ensures that our model remains computationally efficient and scalable, even under rapid data arrival rates. Extensive experiments on real-world and synthetic sensor datasets demonstrate that our method achieves superior detection performance compared to existing baselines. Our approach is easily extensible to other time-series tasks that demand rapid and reliable detection capabilities.
         ]]></description>
     </item>
     <item>
-        <title>Graph-R1: Towards Agentic GraphRAG Framework via End-to-end Reinforcement Learning</title>
-        <link>https://arxiv.org/abs/2507.21892</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21892v1</guid>
+        <title>Repetition Makes Perfect: Recurrent Graph Neural Networks Match Message Passing Limit</title>
+        <link>https://arxiv.org/abs/2505.00291</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.00291v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Haoran Luo, Haihong E, Guanting Chen, Qika Lin, Yikai Guo, Fangzhi Xu, Zemin Kuang, Meina Song, Xiaobao Wu, Yifan Zhu, Luu Anh Tuan</dc:creator>
+        <dc:creator>Eran Rosenbluth, Martin Grohe</dc:creator>
         <description><![CDATA[
-            背景：检索增强生成（RAG）可减少大语言模型幻觉问题，但基于块的检索缺乏结构语义，现有GraphRAG方法也存在构建成本高、一次性检索固定等挑战。方法：提出Graph - R1，通过端到端强化学习构建代理式GraphRAG框架，引入轻量级知识超图构建，将检索建模为多轮代理 - 环境交互，并通过端到端奖励机制优化代理过程。效果：在标准RAG数据集实验中，Graph - R1在推理准确性、检索效率和生成质量上优于传统GraphRAG和强化学习增强的RAG方法。
-            arXiv:2507.21892v1 Announce Type: new 
-Abstract: Retrieval-Augmented Generation (RAG) mitigates hallucination in LLMs by incorporating external knowledge, but relies on chunk-based retrieval that lacks structural semantics. GraphRAG methods improve RAG by modeling knowledge as entity-relation graphs, but still face challenges in high construction cost, fixed one-time retrieval, and reliance on long-context reasoning and prompt design. To address these challenges, we propose Graph-R1, an agentic GraphRAG framework via end-to-end reinforcement learning (RL). It introduces lightweight knowledge hypergraph construction, models retrieval as a multi-turn agent-environment interaction, and optimizes the agent process via an end-to-end reward mechanism. Experiments on standard RAG datasets show that Graph-R1 outperforms traditional GraphRAG and RL-enhanced RAG methods in reasoning accuracy, retrieval efficiency, and generation quality.
+            背景：已知图神经网络（GNN）表达能力受自然消息传递不变性限制。方法：本文精确刻画可计算循环图神经网络（recurrent GNNs）的表达能力，证明具有有限精度参数、求和聚合和ReLU激活的recurrent GNNs能计算符合由颜色精炼算法诱导的自然消息传递不变性的任何图算法，还通过引入随机初始化来提升其表达能力。效果：构建方法在时间和空间上只有多项式开销，在连通图上，带随机初始化的recurrent GNNs能表达所有图算法，可在多项式时间内模拟任何多项式时间图算法。
+            arXiv:2505.00291v2 Announce Type: replace 
+Abstract: We precisely characterize the expressivity of computable Recurrent Graph Neural Networks (recurrent GNNs). We prove that recurrent GNNs with finite-precision parameters, sum aggregation, and ReLU activation, can compute any graph algorithm that respects the natural message-passing invariance induced by the Color Refinement (or Weisfeiler-Leman) algorithm. While it is well known that the expressive power of GNNs is limited by this invariance [Morris et al., AAAI 2019; Xu et al., ICLR 2019], we establish that recurrent GNNs can actually match this limit. This is in contrast to non-recurrent GNNs, which have the power of Weisfeiler-Leman only in a very weak, "non-uniform", sense where each graph size requires a different GNN to compute with. Our construction introduces only a polynomial overhead in both time and space.
+  Furthermore, we show that by incorporating random initialization, for connected graphs recurrent GNNs can express all graph algorithms. In particular, any polynomial-time graph algorithm can be emulated on connected graphs in polynomial time by a recurrent GNN with random initialization.
         ]]></description>
     </item>
     <item>
-        <title>Aether Weaver: Multimodal Affective Narrative Co-Generation with Dynamic Scene Graphs</title>
-        <link>https://arxiv.org/abs/2507.21893</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21893v1</guid>
+        <title>IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation</title>
+        <link>https://arxiv.org/abs/2505.08450</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.08450v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Saeed Ghorbani</dc:creator>
+        <dc:creator>Kazuki Hayashi, Hidetaka Kamigaito, Shinya Kouda, Taro Watanabe</dc:creator>
         <description><![CDATA[
-            背景：传统顺序文本到视觉的管道存在局限。方法：提出Aether Weaver框架，由大语言模型Narrator生成叙事文本和多模态提示，Director作为动态场景图管理器分析文本构建故事世界的结构化表示，Narrative Arc Controller引导故事结构，Affective Tone Mapper确保各模态情感表达一致。效果：通过对不同叙事提示的定性评估，与级联基线方法相比，显著提升了叙事深度、视觉保真度和情感共鸣，为创意原型制作和沉浸式叙事提供平台。
-            arXiv:2507.21893v1 Announce Type: new 
-Abstract: We introduce Aether Weaver, a novel, integrated framework for multimodal narrative co-generation that overcomes limitations of sequential text-to-visual pipelines. Our system concurrently synthesizes textual narratives, dynamic scene graph representations, visual scenes, and affective soundscapes, driven by a tightly integrated, co-generation mechanism. At its core, the Narrator, a large language model, generates narrative text and multimodal prompts, while the Director acts as a dynamic scene graph manager, and analyzes the text to build and maintain a structured representation of the story's world, ensuring spatio-temporal and relational consistency for visual rendering and subsequent narrative generation. Additionally, a Narrative Arc Controller guides the high-level story structure, influencing multimodal affective consistency, further complemented by an Affective Tone Mapper that ensures congruent emotional expression across all modalities. Through qualitative evaluations on a diverse set of narrative prompts encompassing various genres, we demonstrate that Aether Weaver significantly enhances narrative depth, visual fidelity, and emotional resonance compared to cascaded baseline approaches. This integrated framework provides a robust platform for rapid creative prototyping and immersive storytelling experiences.
+            背景：检索增强生成（RAG）可整合外部文档补充大语言模型（LLMs）知识，但实际应用需兼顾准确性与可解释性，现有方法各有不足。方法：提出IterKey，一个由LLM驱动的迭代关键词生成框架，包含生成检索关键词、基于检索文档生成答案、验证答案三个阶段，验证失败时用优化后的关键词重复流程。效果：在四个问答任务中，比基于BM25的RAG和简单基线准确率提升5% - 20%，性能与基于密集检索的RAG相当。
+            arXiv:2505.08450v2 Announce Type: replace 
+Abstract: Retrieval-Augmented Generation (RAG) has emerged as a way to complement the in-context knowledge of Large Language Models (LLMs) by integrating external documents. However, real-world applications demand not only accuracy but also interpretability. While dense retrieval methods provide high accuracy, they lack interpretability; conversely, sparse retrieval methods offer transparency but often fail to capture the full intent of queries due to their reliance on keyword matching. To address these issues, we introduce IterKey, an LLM-driven iterative keyword generation framework that enhances RAG via sparse retrieval. IterKey consists of three LLM-driven stages: generating keywords for retrieval, generating answers based on retrieved documents, and validating the answers. If validation fails, the process iteratively repeats with refined keywords. Across four QA tasks, experimental results show that IterKey achieves 5% to 20% accuracy improvements over BM25-based RAG and simple baselines. Its performance is comparable to dense retrieval-based RAG and prior iterative query refinement methods using dense models. In summary, IterKey is a novel BM25-based approach leveraging LLMs to iteratively refine RAG, effectively balancing accuracy with interpretability.
         ]]></description>
     </item>
     <item>
-        <title>MMAT-1M: A Large Reasoning Dataset for Multimodal Agent Tuning</title>
-        <link>https://arxiv.org/abs/2507.21924</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21924v1</guid>
+        <title>Masked Language Models are Good Heterogeneous Graph Generalizers</title>
+        <link>https://arxiv.org/abs/2506.06157</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.06157v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Tianhong Gao, Yannian Fu, Weiqun Wu, Haixiao Yue, Shanshan Liu, Gang Zhang</dc:creator>
+        <dc:creator>Jinyu Yang, Cheng Yang, Shanyuan Cui, Zeyuan Guo, Liangwei Yang, Muhan Zhang, Zhiqiang Zhang, Chuan Shi</dc:creator>
         <description><![CDATA[
-            背景：多模态领域缺乏大规模、高质量的代理调优数据集来挖掘多模态大语言模型潜力。方法：提出百万级多模态代理调优数据集MMAT - 1M，通过四阶段数据引擎构建，包括整理公开数据集、借助GPT - 4o生成推理、通过反思完善推理、可选压缩对话格式。效果：在MMAT - 1M上微调开源多模态模型性能显著提升，如InternVL2.5 - 8B - RR模型在八个公开基准测试中平均提高2.7%，在RAG基准Dyn - VQA上提高8.8%。
-            arXiv:2507.21924v1 Announce Type: new 
-Abstract: Large Language Models (LLMs), enhanced through agent tuning, have demonstrated remarkable capabilities in Chain-of-Thought (CoT) and tool utilization, significantly surpassing the performance of standalone models. However, the multimodal domain still lacks a large-scale, high-quality agent tuning dataset to unlock the full potential of multimodal large language models. To bridge this gap, we introduce MMAT-1M, the first million-scale multimodal agent tuning dataset designed to support CoT, reflection, and dynamic tool usage. Our dataset is constructed through a novel four-stage data engine: 1) We first curate publicly available multimodal datasets containing question-answer pairs; 2) Then, leveraging GPT-4o, we generate rationales for the original question-answer pairs and dynamically integrate API calls and Retrieval Augmented Generation (RAG) information through a multi-turn paradigm; 3) Furthermore, we refine the rationales through reflection to ensure logical consistency and accuracy, creating a multi-turn dialogue dataset with both Rationale and Reflection (RR); 4) Finally, to enhance efficiency, we optionally compress multi-turn dialogues into a One-turn Rationale and Reflection (ORR) format. By fine-tuning open-source multimodal models on the MMAT-1M, we observe significant performance gains. For instance, the InternVL2.5-8B-RR model achieves an average improvement of 2.7% across eight public benchmarks and 8.8% on the RAG benchmark Dyn-VQA, demonstrating the dataset's effectiveness in enhancing multimodal reasoning and tool-based capabilities. The dataset is publicly available at https://github.com/VIS-MPU-Agent/MMAT-1M.
+            背景：异构图神经网络难以跨领域和任务泛化，现有异构图与大语言模型结合方法存在嵌入空间差异及任务泛化能力有限问题。方法：提出基于掩码语言建模的MLM4HG方法，用基于元路径的文本序列替代异构图标记提取信息，设计文本模板统一不同图任务；将异构图转换为文本形成语料库，用受限目标词汇进行微调。效果：在四个数据集的跨领域多任务实验表明，MLM4HG在少样本和零样本场景泛化性能优于现有方法。
+            arXiv:2506.06157v2 Announce Type: replace 
+Abstract: Heterogeneous graph neural networks (HGNNs) excel at capturing structural and semantic information in heterogeneous graphs (HGs), while struggling to generalize across domains and tasks. With the rapid advancement of large language models (LLMs), a recent study explored the integration of HGNNs with LLMs for generalizable heterogeneous graph learning. However, this approach typically encodes structural information as HG tokens using HGNNs, and disparities in embedding spaces between HGNNs and LLMs have been shown to bias the LLM's comprehension of HGs. Moreover, since these HG tokens are often derived from node-level tasks, the model's ability to generalize across tasks remains limited. To this end, we propose a simple yet effective Masked Language Modeling-based method, called MLM4HG. MLM4HG introduces metapath-based textual sequences instead of HG tokens to extract structural and semantic information inherent in HGs, and designs customized textual templates to unify different graph tasks into a coherent cloze-style 'mask' token prediction paradigm. Specifically,MLM4HG first converts HGs from various domains to texts based on metapaths, and subsequently combines them with the unified task texts to form a HG-based corpus. Moreover, the corpus is fed into a pretrained LM for fine-tuning with a constrained target vocabulary, enabling the fine-tuned LM to generalize to unseen target HGs. Extensive cross-domain and multi-task experiments on four real-world datasets demonstrate the superior generalization performance of MLM4HG over state-of-the-art methods in both few-shot and zero-shot scenarios. Our code is available at https://github.com/BUPT-GAMMA/MLM4HG.
         ]]></description>
     </item>
     <item>
-        <title>Post-Training Large Language Models via Reinforcement Learning from Self-Feedback</title>
-        <link>https://arxiv.org/abs/2507.21931</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21931v1</guid>
+        <title>StruMamba3D: Exploring Structural Mamba for Self-supervised Point Cloud Representation Learning</title>
+        <link>https://arxiv.org/abs/2506.21541</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.21541v3</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Carel van Niekerk, Renato Vukovic, Benjamin Matthias Ruppik, Hsien-chin Lin, Milica Ga\v{s}i\'c</dc:creator>
+        <dc:creator>Chuxin Wang, Yixin Zha, Wenfei Yang, Tianzhu Zhang</dc:creator>
         <description><![CDATA[
-            大语言模型在推理密集型任务上可靠性欠佳，常给出似是而非但校准度差的答案。为此提出自我反馈强化学习（RLSF）后训练方法，利用模型自身置信度作为内在奖励，模拟人类在无外部反馈时的学习。在冻结的大语言模型生成多个思维链解决方案后，计算每个最终答案跨度的置信度并排序，以此合成偏好来微调策略。该方法能优化模型概率估计、强化逐步推理能力，提升算术推理和选择题答题表现，值得进一步研究。
-            arXiv:2507.21931v1 Announce Type: new 
-Abstract: Large Language Models (LLMs) often produce plausible but poorly-calibrated answers, limiting their reliability on reasoning-intensive tasks. We present Reinforcement Learning from Self-Feedback (RLSF), a post-training stage that uses the model's own confidence as an intrinsic reward, mimicking how humans learn in the absence of external feedback. After a frozen LLM generates several chain-of-thought solutions, we define and compute the confidence of each final answer span and rank the traces accordingly. These synthetic preferences are then used to fine-tune the policy with standard preference optimization, similar to RLHF yet requiring no human labels, gold answers, or externally curated rewards.
-  RLSF simultaneously (i) refines the model's probability estimates -- restoring well-behaved calibration -- and (ii) strengthens step-by-step reasoning, yielding improved performance on arithmetic reasoning and multiple-choice question answering.
-  By turning a model's own uncertainty into useful self-feedback, RLSF affirms reinforcement learning on intrinsic model behaviour as a principled and data-efficient component of the LLM post-training pipeline and warrents further research in intrinsic rewards for LLM post-training.
+            背景：基于Mamba的方法在点云表示学习中表现良好，但存在破坏3D点邻接性及下游任务中无法保留长序列记忆的问题。方法：提出StruMamba3D，设计空间状态保留点间空间依赖，用状态更新策略和轻量级卷积增强SSM，引入序列长度自适应策略降低对输入长度的敏感性。效果：在四个下游任务表现优异，在ModelNet40上准确率达95.1%，ScanObjectNN最具挑战性分割上达92.75%，均无投票策略。 
+            arXiv:2506.21541v3 Announce Type: replace 
+Abstract: Recently, Mamba-based methods have demonstrated impressive performance in point cloud representation learning by leveraging State Space Model (SSM) with the efficient context modeling ability and linear complexity. However, these methods still face two key issues that limit the potential of SSM: Destroying the adjacency of 3D points during SSM processing and failing to retain long-sequence memory as the input length increases in downstream tasks. To address these issues, we propose StruMamba3D, a novel paradigm for self-supervised point cloud representation learning. It enjoys several merits. First, we design spatial states and use them as proxies to preserve spatial dependencies among points. Second, we enhance the SSM with a state-wise update strategy and incorporate a lightweight convolution to facilitate interactions between spatial states for efficient structure modeling. Third, our method reduces the sensitivity of pre-trained Mamba-based models to varying input lengths by introducing a sequence length-adaptive strategy. Experimental results across four downstream tasks showcase the superior performance of our method. In addition, our method attains the SOTA 95.1% accuracy on ModelNet40 and 92.75% accuracy on the most challenging split of ScanObjectNN without voting strategy.
+        ]]></description>
+    </item>
+    <item>
+        <title>Graph Collaborative Attention Network for Link Prediction in Knowledge Graphs</title>
+        <link>https://arxiv.org/abs/2507.03947</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.03947v2</guid>
+        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
+        <arxiv:announce_type>new</arxiv:announce_type>
+        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+        <dc:creator>Thanh Hoang-Minh</dc:creator>
+        <description><![CDATA[
+            知识图谱能结构化表示实体及其关系，用于信息检索及自动推理等。本文对比传统基于规则方法与现代深度学习方法进行链接预测。聚焦利用多头注意力联合编码局部邻域实体和关系特征的图神经网络模型KBGAT，提出GCAT模型优化异构节点上下文聚合和交互。在四个常用基准数据集上实验，GCAT不仅优于基于规则方法，还比现有神经嵌入模型更有竞争力或更优，凸显注意力架构完成知识图谱任务的优势。
+            arXiv:2507.03947v2 Announce Type: replace 
+Abstract: Knowledge graphs offer a structured representation of real-world entities and their relationships, enabling a wide range of applications from information retrieval to automated reasoning. In this paper, we conduct a systematic comparison between traditional rule-based approaches and modern deep learning methods for link prediction. We focus on KBGAT, a graph neural network model that leverages multi-head attention to jointly encode both entity and relation features within local neighborhood structures. To advance this line of research, we introduce \textbf{GCAT} (Graph Collaborative Attention Network), a refined model that enhances context aggregation and interaction between heterogeneous nodes. Experimental results on four widely-used benchmark datasets demonstrate that GCAT not only consistently outperforms rule-based methods but also achieves competitive or superior performance compared to existing neural embedding models. Our findings highlight the advantages of attention-based architectures in capturing complex relational patterns for knowledge graph completion tasks.
+        ]]></description>
+    </item>
+    <item>
+        <title>Compression Method for Deep Diagonal State Space Model Based on $H^2$ Optimal Reduction</title>
+        <link>https://arxiv.org/abs/2507.10078</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.10078v2</guid>
+        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
+        <arxiv:announce_type>new</arxiv:announce_type>
+        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+        <dc:creator>Hiroki Sakamoto, Kazuhiro Sato</dc:creator>
+        <description><![CDATA[
+            背景：结合线性状态空间模型（SSM）的深度学习模型在捕捉序列数据长期依赖方面受关注，但其大量参数给资源受限设备部署带来挑战。方法：本研究将控制理论中的$H^{2}$模型降阶技术应用于线性SSM组件，为该模型提出高效参数缩减方法。效果：实验中，LRA基准测试结果显示，基于此方法的模型压缩优于现有平衡截断法，能在不牺牲原模型性能的情况下，将SSM参数数量减少至1/32。
+            arXiv:2507.10078v2 Announce Type: replace 
+Abstract: Deep learning models incorporating linear SSMs have gained attention for capturing long-range dependencies in sequential data. However, their large parameter sizes pose challenges for deployment on resource-constrained devices. In this study, we propose an efficient parameter reduction method for these models by applying $H^{2}$ model order reduction techniques from control theory to their linear SSM components. In experiments, the LRA benchmark results show that the model compression based on our proposed method outperforms an existing method using the Balanced Truncation, while successfully reducing the number of parameters in the SSMs to $1/32$ without sacrificing the performance of the original models.
+        ]]></description>
+    </item>
+    <item>
+        <title>Learning to Extract Rational Evidence via Reinforcement Learning for Retrieval-Augmented Generation</title>
+        <link>https://arxiv.org/abs/2507.15586</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.15586v4</guid>
+        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
+        <arxiv:announce_type>new</arxiv:announce_type>
+        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+        <dc:creator>Xinping Zhao, Shouzheng Huang, Yan Zhong, Xinshuo Hu, Meishan Zhang, Baotian Hu, Min Zhang</dc:creator>
+        <description><![CDATA[
+            检索增强生成（RAG）能提升大语言模型准确性，但检索噪音影响生成质量，需去噪机制。以往方法直接提取证据，易遗漏关键线索且缺乏泛化性。为此，提出EviOmni，先明确推理检索内容中的潜在线索，再有意识提取关键信息。将证据推理与提取统一到一个响应中进行端到端训练，应用知识令牌掩码解耦推理与提取答案，设计三类可验证奖励函数更新模型。实验表明，其能提供高质量证据、提升下游任务准确性，推动在线RAG系统应用。
+            arXiv:2507.15586v4 Announce Type: replace 
+Abstract: Retrieval-Augmented Generation (RAG) effectively improves the accuracy of Large Language Models (LLMs). However, retrieval noises significantly impact the quality of LLMs' generation, necessitating the development of denoising mechanisms. Previous methods extract evidence straightforwardly without explicit thinking, which risks filtering out key clues and struggles with generalization. To this end, we propose EviOmni, which learns to extract rational evidence by (1) explicitly reasoning to identify potential cues within retrieval contents first, and then (2) consciously extracting to avoid omitting any key cues helpful for answering questions. Specifically, we frame evidence reasoning and evidence extraction into one unified response for end-to-end training; apply knowledge token masks for disentanglement to derive reasoning-based and extraction-based answers; and devise three types of verifiable reward functions, including answer, length, and format, to update the model via the policy optimization algorithm. Extensive experiments on three benchmark datasets show the effectiveness of EviOmni, providing compact and high-quality evidence, improving the accuracy of downstream tasks, and promoting effective application in online RAG systems.
+        ]]></description>
+    </item>
+    <item>
+        <title>Learning Only with Images: Visual Reinforcement Learning with Reasoning, Rendering, and Visual Feedback</title>
+        <link>https://arxiv.org/abs/2507.20766</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.20766v2</guid>
+        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
+        <arxiv:announce_type>new</arxiv:announce_type>
+        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
+        <dc:creator>Yang Chen, Yufan Shen, Wenxuan Huang, Sheng Zhou, Qunshu Lin, Xinyu Cai, Zhi Yu, Jiajun Bu, Botian Shi, Yu Qiao</dc:creator>
+        <description><![CDATA[
+            多模态大语言模型在视觉任务中表现出色，但向深度视觉推理发展时过度依赖图像 - 文本监督成瓶颈。为此提出‘推理 - 渲染 - 视觉反馈’（RRVF）框架，基于‘验证不对称’原理，用强化学习训练模型，减少对图像 - 文本监督依赖。该框架形成闭环迭代过程，可通过GRPO算法端到端优化。在数据图表和网页界面的图像到代码生成任务评估中，RRVF训练的模型优于现有模型及基线，泛化能力强，还超训练时用作反馈的先进模型。
+            arXiv:2507.20766v2 Announce Type: replace 
+Abstract: Multimodal Large Language Models (MLLMs) exhibit impressive performance across various visual tasks. Subsequent investigations into enhancing their visual reasoning abilities have significantly expanded their performance envelope. However, a critical bottleneck in the advancement of MLLMs toward deep visual reasoning is their heavy reliance on curated image-text supervision. To solve this problem, we introduce a novel framework termed ``Reasoning-Rendering-Visual-Feedback'' (RRVF), which enables MLLMs to learn complex visual reasoning from only raw images. This framework builds on the ``Asymmetry of Verification'' principle to train MLLMs, i.e., verifying the rendered output against a source image is easier than generating it. We demonstrate that this relative ease provides an ideal reward signal for optimization via Reinforcement Learning (RL) training, reducing reliance on the image-text supervision. Guided by the above principle, RRVF implements a closed-loop iterative process encompassing reasoning, rendering, and visual feedback components, enabling the model to perform self-correction through multi-turn interactions, while this pipeline can be optimized end-to-end by the GRPO algorithm. Extensive evaluations are conducted on image-to-code generation across two diverse domains: data charts and web interfaces. The RRVF-trained model not only outperforms existing open-source MLLMs and supervised fine-tuning baselines but also exhibits superior generalization to unseen datasets. Critically, the model's performance surpasses that of the more advanced MLLM used to provide the feedback signal during training. This work establishes a self-improvement paradigm that offers a viable path to robust, generalizable models without reliance on explicit supervision. Code will be available at https://github.com/L-O-I/RRVF.
         ]]></description>
     </item>
     <item>
         <title>DeepSieve: Information Sieving via LLM-as-a-Knowledge-Router</title>
         <link>https://arxiv.org/abs/2507.22050</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22050v1</guid>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22050v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
         <dc:creator>Minghao Guo, Qingcheng Zeng, Xujiang Zhao, Yanchi Liu, Wenchao Yu, Mengnan Du, Haifeng Chen, Wei Cheng</dc:creator>
         <description><![CDATA[
-            背景：大语言模型在知识密集型查询任务中表现不佳，现有检索增强生成（RAG）方法缺乏细粒度控制，存在检索噪声和推理浅显问题。方法：提出DeepSieve，一个将大语言模型作为知识路由器进行信息筛选的RAG框架，把复杂查询分解为结构化子问题，递归路由到合适知识源，通过多阶段蒸馏过滤无关信息。效果：在跨异构源的多跳问答任务实验中，相比传统RAG方法，推理深度、检索精度和可解释性均有提升。
-            arXiv:2507.22050v1 Announce Type: new 
-Abstract: Large Language Models (LLMs) excel at many reasoning tasks but struggle with knowledge-intensive queries due to their inability to dynamically access up-to-date or domain-specific information. Retrieval-Augmented Generation (RAG) has emerged as a promising solution, enabling LLMs to ground their responses in external sources. However, existing RAG methods lack fine-grained control over both the query and source sides, often resulting in noisy retrieval and shallow reasoning. In this work, we introduce DeepSieve, an agentic RAG framework that incorporates information sieving via LLM-as-a-knowledge-router. DeepSieve decomposes complex queries into structured sub-questions and recursively routes each to the most suitable knowledge source, filtering irrelevant information through a multi-stage distillation process. Our design emphasizes modularity, transparency, and adaptability, leveraging recent advances in agentic system design. Experiments on multi-hop QA tasks across heterogeneous sources demonstrate improved reasoning depth, retrieval precision, and interpretability over conventional RAG approaches.
+            背景：大型语言模型处理知识密集型查询时存在困难，现有RAG方法在查询和源端缺乏细粒度控制，导致检索有噪声、推理浅显。方法：提出DeepSieve这一代理式RAG框架，将复杂查询分解为结构化子问题，递归地将每个子问题路由到最合适的知识源，并通过多阶段蒸馏过滤无关信息。效果：在跨异构源的多跳问答任务实验中，相比传统RAG方法，提升了推理深度、检索精度和可解释性。
+            arXiv:2507.22050v2 Announce Type: replace 
+Abstract: Large Language Models (LLMs) excel at many reasoning tasks but struggle with knowledge-intensive queries due to their inability to dynamically access up-to-date or domain-specific information. Retrieval-Augmented Generation (RAG) has emerged as a promising solution, enabling LLMs to ground their responses in external sources. However, existing RAG methods lack fine-grained control over both the query and source sides, often resulting in noisy retrieval and shallow reasoning. In this work, we introduce DeepSieve, an agentic RAG framework that incorporates information sieving via LLM-as-a-knowledge-router. DeepSieve decomposes complex queries into structured sub-questions and recursively routes each to the most suitable knowledge source, filtering irrelevant information through a multi-stage distillation process. Our design emphasizes modularity, transparency, and adaptability, leveraging recent advances in agentic system design. Experiments on multi-hop QA tasks across heterogeneous sources demonstrate improved reasoning depth, retrieval precision, and interpretability over conventional RAG approaches. Our codes are available at https://github.com/MinghoKwok/DeepSieve.
         ]]></description>
     </item>
     <item>
-        <title>R-Stitch: Dynamic Trajectory Stitching for Efficient Reasoning</title>
-        <link>https://arxiv.org/abs/2507.17307</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.17307v2</guid>
+        <title>KIX: A Knowledge and Interaction-Centric Metacognitive Framework for Task Generalization</title>
+        <link>https://arxiv.org/abs/2402.05346</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2402.05346v3</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Zhuokun Chen, Zeren Chen, Jiahao He, Mingkui Tan, Jianfei Cai, Bohan Zhuang</dc:creator>
+        <dc:creator>Arun Kumar, Paul Schrater</dc:creator>
         <description><![CDATA[
-            背景：思维链（CoT）推理能提升大语言模型解决问题的能力，但会带来大量计算开销，现有加速策略存在局限性。方法：提出R - Stitch，一种基于置信度的混合解码框架，沿推理轨迹在小语言模型（SLM）和大语言模型（LLM）间切换，默认用SLM生成标记，置信度低于阈值时才用LLM。效果：在数学推理基准测试中，R - Stitch可将推理延迟降低达85%，且准确率下降可忽略不计。
-            arXiv:2507.17307v2 Announce Type: cross 
-Abstract: Chain-of-thought (CoT) reasoning enhances the problem-solving capabilities of large language models by encouraging step-by-step intermediate reasoning during inference. While effective, CoT introduces substantial computational overhead due to its reliance on autoregressive decoding over long token sequences. Existing acceleration strategies either reduce sequence length through early stopping or compressive reward designs, or improve decoding speed via speculative decoding with smaller models. However, speculative decoding suffers from limited speedup when the agreement between small and large models is low, and fails to exploit the potential advantages of small models in producing concise intermediate reasoning. In this paper, we present R-Stitch, a token-level, confidence-based hybrid decoding framework that accelerates CoT inference by switching between a small language model (SLM) and a large language model (LLM) along the reasoning trajectory. R-Stitch uses the SLM to generate tokens by default and delegates to the LLM only when the SLM's confidence falls below a threshold. This design avoids full-sequence rollback and selectively invokes the LLM on uncertain steps, preserving both efficiency and answer quality. R-Stitch is model-agnostic, training-free, and compatible with standard decoding pipelines. Experiments on math reasoning benchmarks demonstrate that R-Stitch achieves up to 85\% reduction in inference latency with negligible accuracy drop, highlighting its practical effectiveness in accelerating CoT reasoning.
+            背景：人类能通过灵活解决问题展现通用智能，而人工智能体多为专门领域专家，缺乏通用行为，需理解和利用关键结构化知识表示。方法：引入元认知推理框架KIX，认为通过类型空间与对象交互，有助于学习可迁移的交互概念并促进泛化。效果：该框架为将知识集成到强化学习提供原则性方法，有望助力人工智能、机器人和自主系统实现通用行为。
+            arXiv:2402.05346v3 Announce Type: replace-cross 
+Abstract: People aptly exhibit general intelligence behaviors through flexible problem-solving and the ability to adapt to novel situations by reusing and applying high-level knowledge acquired over time. In contrast, artificial agents tend to be specialists, lacking such generalist behaviors. To bridge this gap, artificial agents will require understanding and exploiting critical structured knowledge representations. We introduce a metacognitive reasoning framework, Knowledge-Interaction-eXecution (KIX), and argue that interactions with objects, by leveraging a type space, facilitate the learning of transferable interaction concepts and promote generalization. This framework offers a principled approach for integrating knowledge into reinforcement learning and holds promise as an enabler for generalist behaviors in artificial intelligence, robotics, and autonomous systems.
         ]]></description>
     </item>
     <item>
-        <title>A Tactical Behaviour Recognition Framework Based on Causal Multimodal Reasoning: A Study on Covert Audio-Video Analysis Combining GAN Structure Enhancement and Phonetic Accent Modelling</title>
-        <link>https://arxiv.org/abs/2507.21100</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21100v1</guid>
+        <title>HypKG: Hypergraph-based Knowledge Graph Contextualization for Precision Healthcare</title>
+        <link>https://arxiv.org/abs/2507.19726</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.19726v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Wei Meng</dc:creator>
+        <dc:creator>Yuzhang Xie, Xu Han, Ran Xu, Xiao Hu, Jiaying Lu, Carl Yang</dc:creator>
         <description><![CDATA[
-            背景：在高噪声和弱结构的战术视频中进行语义理解和威胁检测存在挑战。方法：提出TACTIC - GRAPHS系统，结合谱图理论和多模态图神经推理，采用谱嵌入、时间因果边建模、跨异构模态的判别路径推理，用语义感知关键帧提取方法构建时间图，利用图注意力和拉普拉斯谱映射进行跨模态加权和因果信号分析。效果：在相关数据集上，时间对齐准确率达89.3%，完整威胁链识别率超85%，节点延迟在±150毫秒内，增强了结构可解释性。
-            arXiv:2507.21100v1 Announce Type: cross 
-Abstract: This paper introduces TACTIC-GRAPHS, a system that combines spectral graph theory and multimodal graph neural reasoning for semantic understanding and threat detection in tactical video under high noise and weak structure. The framework incorporates spectral embedding, temporal causal edge modeling, and discriminative path inference across heterogeneous modalities. A semantic-aware keyframe extraction method fuses visual, acoustic, and action cues to construct temporal graphs. Using graph attention and Laplacian spectral mapping, the model performs cross-modal weighting and causal signal analysis. Experiments on TACTIC-AVS and TACTIC-Voice datasets show 89.3 percent accuracy in temporal alignment and over 85 percent recognition of complete threat chains, with node latency within plus-minus 150 milliseconds. The approach enhances structural interpretability and supports applications in surveillance, defense, and intelligent security systems.
-        ]]></description>
-    </item>
-    <item>
-        <title>RATE: An LLM-Powered Retrieval Augmented Generation Technology-Extraction Pipeline</title>
-        <link>https://arxiv.org/abs/2507.21125</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21125v1</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Karan Mirhosseini, Arya Aftab, Alireza Sheikh</dc:creator>
-        <description><![CDATA[
-            在技术变革时代，技术地图对辅助决策至关重要，其构建依赖技术提取自动化方法。本文提出基于大语言模型的RATE技术提取管道，结合RAG与多定义验证。该混合方法在候选生成上召回率高，筛选时精度高。以678篇脑机接口和扩展现实研究论文为例，将提取技术术语映射到共现网络。经专家标注70篇文章验证，RATE的F1分数达91.27%，显著优于BERT的53.73%，为技术提取和映射提供新思路。
-            arXiv:2507.21125v1 Announce Type: cross 
-Abstract: In an era of radical technology transformations, technology maps play a crucial role in enhancing decision making. These maps heavily rely on automated methods of technology extraction. This paper introduces Retrieval Augmented Technology Extraction (RATE), a Large Language Model (LLM) based pipeline for automated technology extraction from scientific literature. RATE combines Retrieval Augmented Generation (RAG) with multi-definition LLM-based validation. This hybrid method results in high recall in candidate generation alongside with high precision in candidate filtering. While the pipeline is designed to be general and widely applicable, we demonstrate its use on 678 research articles focused on Brain-Computer Interfaces (BCIs) and Extended Reality (XR) as a case study. Consequently, The validated technology terms by RATE were mapped into a co-occurrence network, revealing thematic clusters and structural features of the research landscape. For the purpose of evaluation, a gold standard dataset of technologies in 70 selected random articles had been curated by the experts. In addition, a technology extraction model based on Bidirectional Encoder Representations of Transformers (BERT) was used as a comparative method. RATE achieved F1-score of 91.27%, Significantly outperforming BERT with F1-score of 53.73%. Our findings highlight the promise of definition-driven LLM methods for technology extraction and mapping. They also offer new insights into emerging trends within the BCI-XR field. The source code is available https://github.com/AryaAftab/RATE
-        ]]></description>
-    </item>
-    <item>
-        <title>CompoST: A Benchmark for Analyzing the Ability of LLMs To Compositionally Interpret Questions in a QALD Setting</title>
-        <link>https://arxiv.org/abs/2507.21257</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21257v1</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>David Maria Schmidt, Raoul Schubert, Philipp Cimiano</dc:creator>
-        <description><![CDATA[
-            语言解释是一个组合过程，大语言模型虽有较强语言解释能力，但解释过程的系统性存疑。本文提出一个基准来研究大语言模型解释问题的能力在多大程度上具有组合性。基于DBpedia中的图模式生成三个不同难度的数据集，以测试模型在见过原子构建块时对结构复杂问题的解释能力。通过不同大小模型实验，结果显示，随着与优化样本偏差增大，宏观$F_1$从$0.45$降至$0.09$，最低复杂度数据集$F_1$不超$0.57$，表明大语言模型在系统组合解释问题并映射到SPARQL查询上存在困难。
-            arXiv:2507.21257v1 Announce Type: cross 
-Abstract: Language interpretation is a compositional process, in which the meaning of more complex linguistic structures is inferred from the meaning of their parts. Large language models possess remarkable language interpretation capabilities and have been successfully applied to interpret questions by mapping them to SPARQL queries. An open question is how systematic this interpretation process is. Toward this question, in this paper, we propose a benchmark for investigating to what extent the abilities of LLMs to interpret questions are actually compositional. For this, we generate three datasets of varying difficulty based on graph patterns in DBpedia, relying on Lemon lexica for verbalization. Our datasets are created in a very controlled fashion in order to test the ability of LLMs to interpret structurally complex questions, given that they have seen the atomic building blocks. This allows us to evaluate to what degree LLMs are able to interpret complex questions for which they "understand" the atomic parts. We conduct experiments with models of different sizes using both various prompt and few-shot optimization techniques as well as fine-tuning. Our results show that performance in terms of macro $F_1$ degrades from $0.45$ over $0.26$ down to $0.09$ with increasing deviation from the samples optimized on. Even when all necessary information was provided to the model in the input, the $F_1$ scores do not exceed $0.57$ for the dataset of lowest complexity. We thus conclude that LLMs struggle to systematically and compositionally interpret questions and map them into SPARQL queries.
-        ]]></description>
-    </item>
-    <item>
-        <title>Enhancing Graph-based Recommendations with Majority-Voting LLM-Rerank Augmentation</title>
-        <link>https://arxiv.org/abs/2507.21563</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21563v1</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Minh-Anh Nguyen, Bao Nguyen, Ha Lan N. T., Tuan Anh Hoang, Duc-Trong Le, Dung D. Le</dc:creator>
-        <description><![CDATA[
-            背景：推荐系统常因用户-物品交互数据稀疏，导致性能下降和加剧流行度偏差。方法：提出利用大语言模型（LLMs）和物品文本描述的数据增强框架，通过少样本多次提示LLMs对物品重排序并以多数投票聚合结果，生成高置信度的合成交互数据，还将其集成到图对比学习框架中。效果：大量实验表明，该方法提高了准确性、降低了流行度偏差，优于强基线模型。
-            arXiv:2507.21563v1 Announce Type: cross 
-Abstract: Recommendation systems often suffer from data sparsity caused by limited user-item interactions, which degrade their performance and amplify popularity bias in real-world scenarios. This paper proposes a novel data augmentation framework that leverages Large Language Models (LLMs) and item textual descriptions to enrich interaction data. By few-shot prompting LLMs multiple times to rerank items and aggregating the results via majority voting, we generate high-confidence synthetic user-item interactions, supported by theoretical guarantees based on the concentration of measure. To effectively leverage the augmented data in the context of a graph recommendation system, we integrate it into a graph contrastive learning framework to mitigate distributional shift and alleviate popularity bias. Extensive experiments show that our method improves accuracy and reduces popularity bias, outperforming strong baselines.
+            知识图谱广泛应用于医疗保健领域，但缺乏对特定患者等知识上下文的处理能力，而电子健康记录能提供丰富上下文信息。为此，本文提出HypKG框架，通过先进实体链接技术将知识图谱与电子健康记录关联，用超图模型进行知识上下文处理，再利用下游任务引导的超图变换器共同学习合适的表示。在相关实验中，HypKG在多项评估指标上显著提升了医疗预测任务效果，还能改进知识图谱实体和关系表示，提升知识质量和实用价值。
+            arXiv:2507.19726v2 Announce Type: replace-cross 
+Abstract: Knowledge graphs (KGs) are important products of the semantic web, which are widely used in various application domains. Healthcare is one of such domains where KGs are intensively used, due to the high requirement for knowledge accuracy and interconnected nature of healthcare data. However, KGs storing general factual information often lack the ability to account for important contexts of the knowledge such as the status of specific patients, which are crucial in precision healthcare. Meanwhile, electronic health records (EHRs) provide rich personal data, including various diagnoses and medications, which provide natural contexts for general KGs. In this paper, we propose HypKG, a framework that integrates patient information from EHRs into KGs to generate contextualized knowledge representations for accurate healthcare predictions. Using advanced entity-linking techniques, we connect relevant knowledge from general KGs with patient information from EHRs, and then utilize a hypergraph model to "contextualize" the knowledge with the patient information. Finally, we employ hypergraph transformers guided by downstream prediction tasks to jointly learn proper contextualized representations for both KGs and patients, fully leveraging existing knowledge in KGs and patient contexts in EHRs. In experiments using a large biomedical KG and two real-world EHR datasets, HypKG demonstrates significant improvements in healthcare prediction tasks across multiple evaluation metrics. Additionally, by integrating external contexts, HypKG can learn to adjust the representations of entities and relations in KG, potentially improving the quality and real-world utility of knowledge.
         ]]></description>
     </item>
     <item>
         <title>UI-AGILE: Advancing GUI Agents with Effective Reinforcement Learning and Precise Inference-Time Grounding</title>
         <link>https://arxiv.org/abs/2507.22025</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22025v1</guid>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22025v2</guid>
         <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
         <dc:creator>Shuquan Lian, Yuhang Wu, Jia Ma, Zihan Song, Bingqi Chen, Xiawu Zheng, Hui Li</dc:creator>
         <description><![CDATA[
-            多模态大语言模型推动了GUI智能体能力发展，但现有训练和推理技术存在推理设计困境、奖励无效及视觉噪声等问题。为此提出UI - AGILE框架，在训练和推理阶段进行改进。训练上，对监督微调过程提出改进，如连续奖励函数、‘简单思考’奖励和基于裁剪的重采样策略；推理上，提出带选择的分解式定位方法。实验表明，该框架在两个基准测试中达最优，在ScreenSpot - Pro上结合训练和推理改进方法较最佳基线使定位精度提升23%。
-            arXiv:2507.22025v1 Announce Type: cross 
+            背景：多模态大语言模型推动了GUI代理能力发展，但现有训练和推理技术存在推理设计困境、奖励无效和视觉噪声等问题。方法：提出UI - AGILE框架，训练阶段改进监督微调过程，包括连续奖励函数、“简单思考”奖励和基于裁剪的重采样策略；推理阶段采用分解接地选择方法。效果：在两个基准测试中达最优性能，如在ScreenSpot - Pro上结合训练和推理改进方法使接地精度比最佳基线提高23%。
+            arXiv:2507.22025v2 Announce Type: replace-cross 
 Abstract: The emergence of Multimodal Large Language Models (MLLMs) has driven significant advances in Graphical User Interface (GUI) agent capabilities. Nevertheless, existing GUI agent training and inference techniques still suffer from a dilemma for reasoning designs, ineffective reward, and visual noise. To address these issues, we introduce UI-AGILE, a comprehensive framework enhancing GUI agents at both the training and inference stages. For training, we propose a suite of improvements to the Supervised Fine-Tuning (SFT) process: 1) a Continuous Reward function to incentivize high-precision grounding; 2) a "Simple Thinking" reward to balance planning with speed and grounding accuracy; and 3) a Cropping-based Resampling strategy to mitigate the sparse reward problem and improve learning on complex tasks. For inference, we present Decomposed Grounding with Selection, a novel method that dramatically improves grounding accuracy on high-resolution displays by breaking the image into smaller, manageable parts. Experiments show that UI-AGILE achieves the state-of-the-art performance on two benchmarks ScreenSpot-Pro and ScreenSpot-v2. For instance, using both our proposed training and inference enhancement methods brings 23% grounding accuracy improvement over the best baseline on ScreenSpot-Pro.
         ]]></description>
     </item>
     <item>
-        <title>Simulated patient systems are intelligent when powered by large language model-based AI agents</title>
-        <link>https://arxiv.org/abs/2409.18924</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2409.18924v3</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Huizi Yu, Jiayan Zhou, Lingyao Li, Shan Chen, Jack Gallifant, Anye Shi, Xiang Li, Jingxian He, Wenyue Hua, Mingyu Jin, Guang Chen, Yang Zhou, Zhao Li, Trisha Gupte, Ming-Li Chen, Zahra Azizi, Yongfeng Zhang, Yanqiu Xing, Themistocles L. Danielle S. Bitterman, Themistocles L. Assimes, Xin Ma, Lin Lu, Lizhou Fan</dc:creator>
-        <description><![CDATA[
-            背景：模拟患者系统在医学教育和研究中作用重要。方法：开发了由大语言模型AI智能体驱动的AIPatient系统，融入RAG框架，由六个特定任务的基于大语言模型的AI智能体进行复杂推理，还采用了基于真实患者数据构建的AIPatient KG。效果：该系统表现出高智能性，问答准确率达94.15%，知识库F1分数为0.89，可读性良好，且具有高鲁棒性和稳定性。用户研究显示其有高保真度、强可用性和有效教育价值。
-            arXiv:2409.18924v3 Announce Type: replace 
-Abstract: Simulated patient systems play an important role in modern medical education and research, providing safe, integrative medical training environments and supporting clinical decision-making simulations. We developed AIPatient, an intelligent simulated patient system powered by large language model-based AI agents. The system incorporates the Retrieval Augmented Generation (RAG) framework, powered by six task-specific LLM-based AI agents for complex reasoning. For simulation reality, the system is also powered by the AIPatient KG (Knowledge Graph), built with de-identified real patient data from the Medical Information Mart for Intensive Care (MIMIC)-III database. Primary outcomes showcase the system's intelligence, including the system's accuracy in Electronic Record (EHR)-based medical Question Answering (QA), readability, robustness, and stability. The system achieved a QA accuracy of 94.15% when all six AI agents present, surpassing benchmarks with partial or no agent integration. Its knowledgebase demonstrated high validity (F1 score=0.89). Readability scores showed median Flesch Reading Ease at 77.23 and median Flesch Kincaid Grade at 5.6, indicating accessibility to all medical professionals. Robustness and stability were confirmed with non-significant variance (ANOVA F-value=0.6126, p > 0.1; F-value=0.782, p > 0.1). A user study with medical students further demonstrated that AIPatient offers high fidelity, strong usability, and effective educational value, performing comparably or better than human-simulated patients in medical history-taking scenarios. The promising intelligence of the AIPatient system highlights its potential to support a wide range of applications, including medical education, model evaluation, and system integration.
-        ]]></description>
-    </item>
-    <item>
-        <title>Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks</title>
-        <link>https://arxiv.org/abs/2410.22296</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2410.22296v5</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Angelica Chen, Samuel D. Stanton, Frances Ding, Robert G. Alberstein, Andrew M. Watkins, Richard Bonneau, Vladimir Gligorijevi\'c, Kyunghyun Cho, Nathan C. Frey</dc:creator>
-        <description><![CDATA[
-            背景：大语言模型在生物分子优化问题上有前景，但计算成本高且难满足精确约束，而专业求解器虽高效可控但需更多领域知识，且两者对比因实验验证昂贵和合成基准不足而困难。方法：引入Ehrlich函数作为合成测试套件，提出LLOME优化例程并结合新的偏好学习损失。效果：LLOME能学习解决部分Ehrlich函数，在中等难度变体上表现与LaMBO - 2相当或更好，但LLMs存在似然 - 奖励校准问题。
-            arXiv:2410.22296v5 Announce Type: replace 
-Abstract: Although large language models (LLMs) have shown promise in biomolecule optimization problems, they incur heavy computational costs and struggle to satisfy precise constraints. On the other hand, specialized solvers like LaMBO-2 offer efficiency and fine-grained control but require more domain expertise. Comparing these approaches is challenging due to expensive laboratory validation and inadequate synthetic benchmarks. We address this by introducing Ehrlich functions, a synthetic test suite that captures the geometric structure of biophysical sequence optimization problems. With prompting alone, off-the-shelf LLMs struggle to optimize Ehrlich functions. In response, we propose LLOME (Language Model Optimization with Margin Expectation), a bilevel optimization routine for online black-box optimization. When combined with a novel preference learning loss, we find LLOME can not only learn to solve some Ehrlich functions, but can even perform as well as or better than LaMBO-2 on moderately difficult Ehrlich variants. However, LLMs also exhibit some likelihood-reward miscalibration and struggle without explicit rewards. Our results indicate LLMs can occasionally provide significant benefits, but specialized solvers are still competitive and incur less overhead.
-        ]]></description>
-    </item>
-    <item>
-        <title>Multi-branch of Attention Yields Accurate Results for Tabular Data</title>
-        <link>https://arxiv.org/abs/2502.12507</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2502.12507v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Xuechen Li, Yupeng Li, Jian Liu, Xiaolin Jin, Xin Hu</dc:creator>
-        <description><![CDATA[
-            背景：表格数据有显著特征异质性，现有基于变压器的方法缺乏处理机制。方法：提出基于编码器 - 解码器变压器的框架MAYA，编码器设计多分支注意力机制，融合异构特征并限制参数增长，采用带动态一致性权重约束的协作学习；解码器用交叉注意力整合表格数据与标签特征。效果：在多种数据集上评估，与其他先进方法对比，在表格分类和回归任务中表现优于基于变压器的方法。
-            arXiv:2502.12507v2 Announce Type: replace 
-Abstract: Tabular data inherently exhibits significant feature heterogeneity, but existing transformer-based methods lack specialized mechanisms to handle this property. To bridge the gap, we propose MAYA, an encoder-decoder transformer-based framework. In the encoder, we design a Multi-Branch of Attention (MBA) that constructs multiple parallel attention branches and averages the features at each branch, effectively fusing heterogeneous features while limiting parameter growth. Additionally, we employ collaborative learning with a dynamic consistency weight constraint to produce more robust representations. In the decoder stage, cross-attention is utilized to seamlessly integrate tabular data with corresponding label features. This dual-attention mechanism effectively captures both intra-instance and inter-instance interactions. We evaluate the proposed method on a wide range of datasets and compare it with other state-of-the-art transformer-based methods. Extensive experiments demonstrate that our model achieves superior performance among transformer-based methods in both tabular classification and regression tasks.
-        ]]></description>
-    </item>
-    <item>
-        <title>Context-Aware Probabilistic Modeling with LLM for Multimodal Time Series Forecasting</title>
-        <link>https://arxiv.org/abs/2505.10774</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.10774v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Yueyang Yao, Jiajun Li, Xingyuan Dai, MengMeng Zhang, Xiaoyan Gong, Fei-Yue Wang, Yisheng Lv</dc:creator>
-        <description><![CDATA[
-            时间序列预测在多个领域至关重要，但现有方法难以有效整合外部文本并与大语言模型的概率特性对齐。为此提出CAPTime方法，先利用预训练时间序列编码器编码时间模式，再通过可学习交互将其与文本上下文对齐以生成联合多模态表示，结合分布专家混合体和冻结的大语言模型实现上下文感知概率预测。实验表明，该方法在多模态场景下准确性和泛化性更优，在数据稀缺场景中通过混合概率解码也展现出鲁棒性。
-            arXiv:2505.10774v2 Announce Type: replace 
-Abstract: Time series forecasting is important for applications spanning energy markets, climate analysis, and traffic management. However, existing methods struggle to effectively integrate exogenous texts and align them with the probabilistic nature of large language models (LLMs). Current approaches either employ shallow text-time series fusion via basic prompts or rely on deterministic numerical decoding that conflict with LLMs' token-generation paradigm, which limits contextual awareness and distribution modeling. To address these limitations, we propose CAPTime, a context-aware probabilistic multimodal time series forecasting method that leverages text-informed abstraction and autoregressive LLM decoding. Our method first encodes temporal patterns using a pretrained time series encoder, then aligns them with textual contexts via learnable interactions to produce joint multimodal representations. By combining a mixture of distribution experts with frozen LLMs, we enable context-aware probabilistic forecasting while preserving LLMs' inherent distribution modeling capabilities. Experiments on diverse time series forecasting tasks demonstrate the superior accuracy and generalization of CAPTime, particularly in multimodal scenarios. Additional analysis highlights its robustness in data-scarce scenarios through hybrid probabilistic decoding.
-        ]]></description>
-    </item>
-    <item>
-        <title>FB-RAG: Improving RAG with Forward and Backward Lookup</title>
-        <link>https://arxiv.org/abs/2505.17206</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.17206v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Kushal Chawla, Alfy Samuel, Anoop Kumar, Daben Liu</dc:creator>
-        <description><![CDATA[
-            背景：传统检索增强生成（RAG）处理复杂查询时，在选择检索上下文大小上存在难题。方法：提出无训练框架FB - RAG，利用轻量级大语言模型预测未来生成内容，依据多个采样输出的证据精准确定最相关上下文供最终生成器使用。效果：在9个数据集上表现出色，能减少延迟。在EN.QA数据集上，可降低超48%延迟达到领先基线水平，或降低10%延迟实现8%性能提升。
-            arXiv:2505.17206v2 Announce Type: replace 
-Abstract: Traditional Retrieval-Augmented Generation (RAG) struggles with complex queries that lack strong signals to retrieve the most relevant context, forcing a trade-off between choosing a small context that misses key information and a large context that confuses the LLM. To address this, we propose Forward-Backward RAG (FB-RAG), a new training-free framework based on a simple yet powerful forward-looking strategy. FB-RAG employs a light-weight LLM to peek into potential future generations, using evidence from multiple sampled outputs to precisely identify the most relevant context for a final, more powerful generator. This improves performance without complex finetuning or Reinforcement Learning common in prior work. Across 9 datasets, FB-RAG consistently delivers strong results. Further, the performance gains can be achieved with reduced latency due to a shorter, more focused prompt for the powerful generator. On EN.QA dataset, FB-RAG matches the leading baseline with over 48% latency reduction or achieves an 8% performance improvement with a 10% latency reduction. Our analysis finds cases where even when the forward-looking LLM fails to generate correct answers, its attempts are sufficient to guide the final model to an accurate response, demonstrating how smaller LLMs can systematically improve the performance and efficiency of larger ones.
-        ]]></description>
-    </item>
-    <item>
-        <title>Incentivizing Reasoning for Advanced Instruction-Following of Large Language Models</title>
-        <link>https://arxiv.org/abs/2506.01413</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.01413v5</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Yulei Qin, Gang Li, Zongyi Li, Zihan Xu, Yuchen Shi, Zhekai Lin, Xiao Cui, Ke Li, Xing Sun</dc:creator>
-        <description><![CDATA[
-            现有大语言模型在遵循复杂指令方面存在挑战，传统思维链方法因简单复述指令，无法剖析约束关系，对性能产生负面影响。为此，研究提出RAIF方法，通过激励推理以提升大模型处理复杂指令的能力。该方法先基于现有分类分解复杂指令，提出数据获取方法；再利用强化学习培养推理能力，通过样本对比增强思维链，并利用专家行为克隆实现模型转变。实验表明，15亿参数模型性能提升11.74%，接近80亿参数模型，且在分布外约束上有良好泛化性。
-            arXiv:2506.01413v5 Announce Type: replace 
-Abstract: Existing large language models (LLMs) face challenges of following complex instructions, especially when multiple constraints are present and organized in paralleling, chaining, and branching structures. One intuitive solution, namely chain-of-thought (CoT), is expected to universally improve capabilities of LLMs. However, we find that the vanilla CoT exerts a negative impact on performance due to its superficial reasoning pattern of simply paraphrasing the instructions. It fails to peel back the compositions of constraints for identifying their relationship across hierarchies of types and dimensions. To this end, we propose RAIF, a systematic method to boost LLMs in dealing with complex instructions via incentivizing reasoning for test-time compute scaling. First, we stem from the decomposition of complex instructions under existing taxonomies and propose a reproducible data acquisition method. Second, we exploit reinforcement learning (RL) with verifiable rule-centric reward signals to cultivate reasoning specifically for instruction following. We address the shallow, non-essential nature of reasoning under complex instructions via sample-wise contrast for superior CoT enforcement. We also exploit behavior cloning of experts to facilitate steady distribution shift from fast-thinking LLMs to skillful reasoners. Extensive evaluations on seven comprehensive benchmarks confirm the validity of the proposed method, where a 1.5B LLM achieves 11.74% gains with performance comparable to a 8B LLM. Evaluation on OOD constraints also confirms the generalizability of our RAIF. Codes and data are available at https://github.com/yuleiqin/RAIF.
-  Keywords: reinforcement learning with verifiable rewards (RLVR), instruction following, complex instructions
-        ]]></description>
-    </item>
-    <item>
-        <title>HIRAG: Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation</title>
-        <link>https://arxiv.org/abs/2507.05714</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.05714v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>YiHan Jiao, ZheHao Tan, Dan Yang, DuoLin Sun, Jie Feng, Yue Shen, Jian Wang, Peng Wei</dc:creator>
-        <description><![CDATA[
-            背景：检索增强生成（RAG）是解决大语言模型处理实时信息和特定领域问题的基础范式，但传统RAG系统存在对生成模型能力研究不足、文档质量不一致等问题。方法：提出RAG模型应具备过滤、组合、特定推理三种递进的分层能力，引入新的RAG指令微调方法HIRAG，采用“先思考后回答”策略，利用多级渐进思维链提升模型开卷考试能力。效果：实验表明，HIRAG训练策略显著提升了模型在多个数据集上的性能。
-            arXiv:2507.05714v2 Announce Type: replace 
-Abstract: Retrieval-augmented generation (RAG) has become a fundamental paradigm for addressing the challenges faced by large language models in handling real-time information and domain-specific problems. Traditional RAG systems primarily rely on the in-context learning (ICL) capabilities of the large language model itself. Still, in-depth research on the specific capabilities needed by the RAG generation model is lacking, leading to challenges with inconsistent document quality and retrieval system imperfections. Even the limited studies that fine-tune RAG generative models often \textit{lack a granular focus on RAG task} or \textit{a deeper utilization of chain-of-thought processes}. To address this, we propose that RAG models should possess three progressively hierarchical abilities (1) Filtering: the ability to select relevant information; (2) Combination: the ability to combine semantic information across paragraphs; and (3) RAG-specific reasoning: the ability to further process external knowledge using internal knowledge. Thus, we introduce our new RAG instruction fine-tuning method, Hierarchical-Thought Instruction-Tuning Retrieval-Augmented Generation (HIRAG) incorporates a "think before answering" strategy. This method enhances the model's open-book examination capability by utilizing multi-level progressive chain-of-thought. Experiments show that the HIRAG training strategy significantly improves the model's performance on datasets such as RGB, PopQA, MuSiQue, HotpotQA, and PubmedQA.
-        ]]></description>
-    </item>
-    <item>
-        <title>From Semantics, Scene to Instance-awareness: Distilling Foundation Model for Open-vocabulary Situation Recognition</title>
-        <link>https://arxiv.org/abs/2507.14686</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.14686v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Chen Cai, Tianyi Liu, Jianjun Gao, Wenyang Liu, Kejun Wu, Ruoyu Wang, Yi Wang, Soo Chin Liew</dc:creator>
-        <description><![CDATA[
-            背景：当前多模态大语言模型处理复杂场景识别任务能力不足且部署资源消耗大，传统模型泛化能力欠佳。方法：提出多模态交互提示蒸馏（MIPD）框架，先利用基于大语言模型的判断理由生成器构建正负理由，再通过负引导多模态提示对齐模块使理由与视觉信息对齐，最后将对齐的知识蒸馏到小模型。效果：在Ov - SWiG数据集上对常见、罕见和未见场景识别表现出色，在HICO - DET数据集上未见检测能力提升。
-            arXiv:2507.14686v2 Announce Type: replace 
-Abstract: Recent Multimodal Large Language Models (MLLMs) exhibit strong zero-shot abilities but struggle with complex Grounded Situation Recognition (GSR) and are resource-intensive for edge device deployment. Meanwhile, conventional GSR models often lack generalization ability, falling short in recognizing unseen and rare situations. In this paper, we exploit transferring knowledge from a teacher MLLM to a small GSR model to enhance its generalization and zero-shot abilities, thereby introducing the task of Open-vocabulary Grounded Situation Recognition (Ov-GSR). To achieve this, we propose Multimodal Interactive Prompt Distillation (MIPD), a novel framework that distills enriched multimodal knowledge from the foundation model, enabling the student Ov-GSR model to recognize unseen situations and be better aware of rare situations. Specifically, the MIPD framework first leverages the LLM-based Judgmental Rationales Generator (JRG) to construct positive and negative glimpse and gaze rationales enriched with contextual semantic information. The proposed scene-aware and instance-perception prompts are then introduced to align rationales with visual information from the MLLM teacher via the Negative-Guided Multimodal Prompting Alignment (NMPA) module, effectively capturing holistic and perceptual multimodal knowledge. Finally, the aligned multimodal knowledge is distilled into the student Ov-GSR model, providing a stronger foundation for generalization that enhances situation understanding, bridges the gap between seen and unseen scenarios, and mitigates prediction bias in rare cases. We evaluate MIPD on the refined Ov-SWiG dataset, achieving superior performance on seen, rare, and unseen situations, and further demonstrate improved unseen detection on the HICO-DET dataset.
-        ]]></description>
-    </item>
-    <item>
-        <title>C2-Evo: Co-Evolving Multimodal Data and Model for Self-Improving Reasoning</title>
-        <link>https://arxiv.org/abs/2507.16518</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.16518v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Xiuwei Chen, Wentao Hu, Hanhui Li, Jun Zhou, Zisheng Chen, Meng Cao, Yihan Zeng, Kui Zhang, Yu-Jie Yuan, Jianhua Han, Hang Xu, Xiaodan Liang</dc:creator>
-        <description><![CDATA[
-            背景：提升多模态大语言模型（MLLMs）需高质量数据集，但成本高且难扩展，现有自改进模型存在数据复杂度不一致、数据与模型进化分离问题。方法：提出C2 - Evo框架，通过跨模态数据进化循环和数据 - 模型进化循环联合提升训练数据和模型能力。前者生成复杂多模态问题扩展数据集，后者根据模型性能选择问题进行交替训练。效果：在多个数学推理基准测试中持续取得显著性能提升。
-            arXiv:2507.16518v2 Announce Type: replace 
-Abstract: Recent advances in multimodal large language models (MLLMs) have shown impressive reasoning capabilities. However, further enhancing existing MLLMs necessitates high-quality vision-language datasets with carefully curated task complexities, which are both costly and challenging to scale. Although recent self-improving models that iteratively refine themselves offer a feasible solution, they still suffer from two core challenges: (i) most existing methods augment visual or textual data separately, resulting in discrepancies in data complexity (e.g., over-simplified diagrams paired with redundant textual descriptions); and (ii) the evolution of data and models is also separated, leading to scenarios where models are exposed to tasks with mismatched difficulty levels. To address these issues, we propose C2-Evo, an automatic, closed-loop self-improving framework that jointly evolves both training data and model capabilities. Specifically, given a base dataset and a base model, C2-Evo enhances them by a cross-modal data evolution loop and a data-model evolution loop. The former loop expands the base dataset by generating complex multimodal problems that combine structured textual sub-problems with iteratively specified geometric diagrams, while the latter loop adaptively selects the generated problems based on the performance of the base model, to conduct supervised fine-tuning and reinforcement learning alternately. Consequently, our method continuously refines its model and training data, and consistently obtains considerable performance gains across multiple mathematical reasoning benchmarks. Our code, models, and datasets will be released.
-        ]]></description>
-    </item>
-    <item>
-        <title>Towards Reliable Proof Generation with LLMs: A Neuro-Symbolic Approach</title>
-        <link>https://arxiv.org/abs/2505.14479</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2505.14479v4</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Oren Sultan, Eitan Stern, Dafna Shahaf</dc:creator>
-        <description><![CDATA[
-            大语言模型在数学证明生成等需严格逻辑演绎和符号推理的形式领域表现不佳。为此提出神经符号方法，结合大语言模型的生成能力与结构化组件。以几何问题为例，一是检索相似问题用其证明引导大模型，二是用形式验证器评估生成的证明并反馈以修正错误。该方法使OpenAI的o1模型证明准确率提升58%-70%，能提高大模型可靠性、准确性和一致性，解锁复杂任务和关键应用。
-            arXiv:2505.14479v4 Announce Type: replace-cross 
-Abstract: Large language models (LLMs) struggle with formal domains that require rigorous logical deduction and symbolic reasoning, such as mathematical proof generation. We propose a neuro-symbolic approach that combines LLMs' generative strengths with structured components to overcome this challenge. As a proof-of-concept, we focus on geometry problems. Our approach is two-fold: (1) we retrieve analogous problems and use their proofs to guide the LLM, and (2) a formal verifier evaluates the generated proofs and provides feedback, helping the model fix incorrect proofs. We demonstrate that our method significantly improves proof accuracy for OpenAI's o1 model (58%-70% improvement); both analogous problems and the verifier's feedback contribute to these gains. More broadly, shifting to LLMs that generate provably correct conclusions could dramatically improve their reliability, accuracy and consistency, unlocking complex tasks and critical real-world applications that require trustworthiness.
-        ]]></description>
-    </item>
-    <item>
-        <title>SLR: Automated Synthesis for Scalable Logical Reasoning</title>
-        <link>https://arxiv.org/abs/2506.15787</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2506.15787v3</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Lukas Helff, Ahmad Omar, Felix Friedrich, Antonia W\"ust, Hikaru Shindo, Rupert Mitchell, Tim Woydt, Patrick Schramowski, and Wolfgang Stammer Kristian Kersting</dc:creator>
-        <description><![CDATA[
-            背景：当前大语言模型在逻辑推理任务中存在不足。方法：提出端到端框架SLR，可根据用户任务规范自动合成归纳推理指令提示、验证程序和潜在真实规则，还创建了含19k提示的SLR - Bench基准。效果：大规模评估发现当代大模型易生成语法正确规则，但逻辑推理常出错。通过SLR进行课程学习使Llama - 3 - 8B在SLR - Bench上准确率翻倍，计算成本低，且推理能力可泛化到其他基准，证明其对下游推理有效。
-            arXiv:2506.15787v3 Announce Type: replace-cross 
-Abstract: We introduce SLR, an end-to-end framework for systematic evaluation and training of Large Language Models (LLMs) via Scalable Logical Reasoning. Given a user's task specification, SLR automatically synthesizes (i) an instruction prompt for an inductive reasoning task, (ii) a validation program, executable on model outputs to provide verifiable rewards, and (iii) the latent ground-truth rule. This process is fully automated, scalable, requires no human annotations, and offers precise control over task difficulty. Using SLR, we create SLR-Bench, a benchmark comprising 19k prompts organized into 20 curriculum levels that progressively increase in relational, arithmetic, and recursive complexity. Large-scale evaluation reveals that contemporary LLMs readily produce syntactically valid rules, yet often fail at correct logical inference. Recent reasoning LLMs demonstrate improved performance but incur very high test-time computation, with costs exceeding $300 for just 1,000 prompts. Finally, curriculum learning via SLR doubles Llama-3-8B accuracy on SLR-Bench, achieving parity with Gemini-Flash-Thinking at a fraction of computational cost. Moreover, these reasoning capabilities generalize to a wide range of established benchmarks, underscoring the effectiveness of SLR for downstream reasoning.
-        ]]></description>
-    </item>
-    <item>
-        <title>A Multi-Agent System Enables Versatile Information Extraction from the Chemical Literature</title>
-        <link>https://arxiv.org/abs/2507.20230</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.20230v2</guid>
-        <category>我关注的研究话题是多模态大模型，尤其是与结构化数据（图、序列等）相关的研究，包括大模型结构化数据特征对齐、大模型结构化数据RAG、大模型思维链。具体的研究问题有：（1）如何有效地将结构化的信息（图、序列数据）与自然语言的语义空间进行对齐，使得模型能够同时理解数据结构和语义信息；（2）如何用适当的指令使得大模型理解结构化数据中的结构信息；（3）如何赋予大语言模型图学习下游任务的逐步推理能力，从而逐步推断出更复杂的关系和属性。（4）对于下游任务的推理能力，目前的研究比较少，针对序列数据的推理能力研究非常少。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Yufan Chen, Ching Ting Leung, Bowen Yu, Jianwei Sun, Yong Huang, Linyan Li, Hao Chen, Hanyu Gao</dc:creator>
-        <description><![CDATA[
-            这是一篇关于多模态大模型用于化学信息提取的研究。背景是构建高质量化学数据库需从文献自动提取信息，但受化学信息多模态和风格多变限制。方法是开发基于多模态大语言模型的多智能体系统，利用模型推理能力理解化学图形结构，分解任务并协调专业智能体求解。效果显著，在基准数据集上F1分数达80.8%，远超先前模型，各子任务表现也有提升，推动化学信息提取结构化。
-            arXiv:2507.20230v2 Announce Type: replace-cross 
-Abstract: To fully expedite AI-powered chemical research, high-quality chemical databases are the cornerstone. Automatic extraction of chemical information from the literature is essential for constructing reaction databases, but it is currently limited by the multimodality and style variability of chemical information. In this work, we developed a multimodal large language model (MLLM)-based multi-agent system for robust and automated chemical information extraction. It utilizes the MLLM's strong reasoning capability to understand the structure of diverse chemical graphics, decompose the extraction task into sub-tasks, and coordinate a set of specialized agents, each combining the capabilities of the MLLM with the precise, domain-specific strengths of dedicated tools, to solve them accurately and integrate the results into a unified output. Our system achieved an F1 score of 80.8% on a benchmark dataset of sophisticated multimodal chemical reaction graphics from the literature, surpassing the previous state-of-the-art model (F1 score of 35.6%) by a significant margin. Additionally, it demonstrated consistent improvements in key sub-tasks, including molecular image recognition, reaction image parsing, named entity recognition and text-based reaction extraction. This work is a critical step toward automated chemical information extraction into structured datasets, which will be a strong promoter of AI-driven chemical research.
-        ]]></description>
-    </item>
-    <item>
-        <title>Combolutional Neural Networks</title>
-        <link>https://arxiv.org/abs/2507.21202</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21202v1</guid>
+        <title>A Two-Step Learning Framework for Enhancing Sound Event Localization and Detection</title>
+        <link>https://arxiv.org/abs/2507.22322</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22322v1</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Cameron Churchwell, Minje Kim, Paris Smaragdis</dc:creator>
+        <dc:creator>Hogeon Yu</dc:creator>
         <description><![CDATA[
-            在机器学习模型设计中，选择合适的归纳偏置至关重要，尤其在处理音频时，短音频片段也可能包含数百万个样本。为此，论文提出卷积层，即一种学习延迟的IIR梳状滤波器和融合包络检测器，可在时域提取谐波特征。通过三个信息检索任务验证了其有效性，评估了计算成本并给出高效训练实现。结果表明，在钢琴转录、说话人分类和音调检测等需精确谐波分析的音频任务中，它能有效替代卷积层，且具有参数少、CPU推理高效、纯实值计算和可解释性强等优点。
-            arXiv:2507.21202v1 Announce Type: new 
-Abstract: Selecting appropriate inductive biases is an essential step in the design of machine learning models, especially when working with audio, where even short clips may contain millions of samples. To this end, we propose the combolutional layer: a learned-delay IIR comb filter and fused envelope detector, which extracts harmonic features in the time domain. We demonstrate the efficacy of the combolutional layer on three information retrieval tasks, evaluate its computational cost relative to other audio frontends, and provide efficient implementations for training. We find that the combolutional layer is an effective replacement for convolutional layers in audio tasks where precise harmonic analysis is important, e.g., piano transcription, speaker classification, and key detection. Additionally, the combolutional layer has several other key benefits over existing frontends, namely: low parameter count, efficient CPU inference, strictly real-valued computations, and improved interpretability.
+            这是一篇关于声事件定位与检测（SELD）的论文。现有SELD方法的单分支或双分支架构存在优化冲突、信息交换受限等问题。为此，作者提出两步学习框架。一是引入轨迹重新排序格式以保持时间一致性；二是分别训练声事件检测（SED）和到达方向（DoA）网络，防止相互干扰；最后融合DoA和SED特征，提升SELD性能。在2023 DCASE挑战赛任务3数据集上的实验，验证了该框架能克服现有架构局限，改善事件分类与定位。
+            arXiv:2507.22322v1 Announce Type: new 
+Abstract: Sound Event Localization and Detection (SELD) is crucial in spatial audio processing, enabling systems to detect sound events and estimate their 3D directions. Existing SELD methods use single- or dual-branch architectures: single-branch models share SED and DoA representations, causing optimization conflicts, while dual-branch models separate tasks but limit information exchange. To address this, we propose a two-step learning framework. First, we introduce a tracwise reordering format to maintain temporal consistency, preventing event reassignments across tracks. Next, we train SED and DoA networks to prevent interference and ensure task-specific feature learning. Finally, we effectively fuse DoA and SED features to enhance SELD performance with better spatial and event representation. Experiments on the 2023 DCASE challenge Task 3 dataset validate our framework, showing its ability to overcome single- and dual-branch limitations and improve event classification and localization.
         ]]></description>
     </item>
     <item>
-        <title>Whilter: A Whisper-based Data Filter for "In-the-Wild" Speech Corpora Using Utterance-level Multi-Task Classification</title>
-        <link>https://arxiv.org/abs/2507.21642</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21642v1</guid>
+        <title>Next Tokens Denoising for Speech Synthesis</title>
+        <link>https://arxiv.org/abs/2507.22746</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.22746v1</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>William Ravenscroft, George Close, Kit Bower-Morris, Jamie Stacey, Dmitry Sityaev, Kris Y. Hong</dc:creator>
+        <dc:creator>Yanqing Liu, Ruiqing Xue, Chong Zhang, Yufei Liu, Gang Wang, Bohan Li, Yao Qian, Lei He, Shujie Liu, Sheng Zhao</dc:creator>
         <description><![CDATA[
-            近年来，大规模野外语音数据集因可用于无监督特征学习而备受关注，但其中常含多说话人、非目标语言和音乐等干扰特征，影响模型学习。为此提出Whilter模型，它采用Whisper编码器和基于注意力的分类器，能同时解决五个不同的分类问题，还发布了两个流行野外语料库子集的标注数据集。该模型在三个子任务上F1分数超85%，等错误率在6.5% - 7.8%，在特定语音类别上优于BEATs分类器，且处理时间较单任务组合显著减少。
-            arXiv:2507.21642v1 Announce Type: new 
-Abstract: Large-scale in-the-wild speech datasets have become more prevalent in recent years due to increased interest in models that can learn useful features from unlabelled data for tasks such as speech recognition or synthesis. These datasets often contain undesirable features, such as multiple speakers, non-target languages, and music, which may impact model learning. The Whilter model is proposed as a multitask solution to identify these undesirable samples. Whilter uses a Whisper encoder with an attention-based classifier to solve five diverse classification problems at once. In addition, an annotated dataset is published for a subset of two popular in-the-wild corpora. Whilter achieves F1 scores above 85% and equal error rates of 6.5% to 7.8% for three of five subtasks, outperforming a state-of-the-art BEATs classifier on speech-specific classes, with a notable decrease in processing time compared to a combination of single-task alternatives.
+            背景：扩散和自回归（AR）模型虽推动了生成式建模发展，但存在局限，AR模型无法利用未来上下文且生成速度慢，扩散模型在键值（KV）缓存方面有困难。方法：提出Dragon - FM，统一AR和流匹配的文本到语音（TTS）设计，分块处理48 kHz音频编解码令牌，跨块进行AR建模，块内进行并行流匹配。效果：能利用KV缓存、纳入未来上下文，可预测离散令牌，在播客数据集上能高效生成高质量零样本播客。
+            arXiv:2507.22746v1 Announce Type: new 
+Abstract: While diffusion and autoregressive (AR) models have significantly advanced generative modeling, they each present distinct limitations. AR models, which rely on causal attention, cannot exploit future context and suffer from slow generation speeds. Conversely, diffusion models struggle with key-value (KV) caching. To overcome these challenges, we introduce Dragon-FM, a novel text-to-speech (TTS) design that unifies AR and flow-matching. This model processes 48 kHz audio codec tokens in chunks at a compact 12.5 tokens per second rate. This design enables AR modeling across chunks, ensuring global coherence, while parallel flow-matching within chunks facilitates fast iterative denoising. Consequently, the proposed model can utilize KV-cache across chunks and incorporate future context within each chunk. Furthermore, it bridges continuous and discrete feature modeling, demonstrating that continuous AR flow-matching can predict discrete tokens with finite scalar quantizers. This efficient codec and fast chunk-autoregressive architecture also makes the proposed model particularly effective for generating extended content. Experiment for demos of our work} on podcast datasets demonstrate its capability to efficiently generate high-quality zero-shot podcasts.
         ]]></description>
     </item>
     <item>
-        <title>Hyperbolic Embeddings for Order-Aware Classification of Audio Effect Chains</title>
-        <link>https://arxiv.org/abs/2507.20624</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.20624v1</guid>
+        <title>MAVFlow: Preserving Paralinguistic Elements with Conditional Flow Matching for Zero-Shot AV2AV Multilingual Translation</title>
+        <link>https://arxiv.org/abs/2503.11026</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2503.11026v2</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Aogu Wada, Tomohiko Nakamura, Hiroshi Saruwatari</dc:creator>
+        <dc:creator>Sungwoo Cho, Jeongsoo Choi, Sungnyun Kim, Se-Young Yun</dc:creator>
         <description><![CDATA[
-            这是一篇关于音频效果链分类的研究。背景是音频效果在音乐制作中很重要，效果链顺序对最终声音影响大，但相关研究多关注效果类型和参数估计。方法是将效果链识别作为联合估计效果类型和顺序的任务，提出基于神经网络的方法，将湿信号嵌入双曲空间并分类效果链。效果上，用吉他声音实验表明，合适曲率下该方法优于欧几里得空间方法，对捕捉效果顺序有效。
-            arXiv:2507.20624v1 Announce Type: cross 
-Abstract: Audio effects (AFXs) are essential tools in music production, frequently applied in chains to shape timbre and dynamics. The order of AFXs in a chain plays a crucial role in determining the final sound, particularly when non-linear (e.g., distortion) or time-variant (e.g., chorus) processors are involved. Despite its importance, most AFX-related studies have primarily focused on estimating effect types and their parameters from a wet signal. To address this gap, we formulate AFX chain recognition as the task of jointly estimating AFX types and their order from a wet signal. We propose a neural-network-based method that embeds wet signals into a hyperbolic space and classifies their AFX chains. Hyperbolic space can represent tree-structured data more efficiently than Euclidean space due to its exponential expansion property. Since AFX chains can be represented as trees, with AFXs as nodes and edges encoding effect order, hyperbolic space is well-suited for modeling the exponentially growing and non-commutative nature of ordered AFX combinations, where changes in effect order can result in different final sounds. Experiments using guitar sounds demonstrate that, with an appropriate curvature, the proposed method outperforms its Euclidean counterpart. Further analysis based on AFX type and chain length highlights the effectiveness of the proposed method in capturing AFX order.
+            当前文本转语音模型发展良好，但视听到视听（AV2AV）翻译存在保持原视频与翻译后语音、面部特征一致性的挑战。本文提出条件流匹配（CFM）零样本视听渲染器，利用多模态引导，音频方面结合稳健说话人嵌入和x向量强化CFM过程，还向面部渲染模块传递情感信息。该方法能独立于语义语言内容处理零样本翻译任务。实验表明，结合面部信息的高质量梅尔频谱图能提升合成语音质量和面部生成效果，改善LSE和FID分数。
+            arXiv:2503.11026v2 Announce Type: replace 
+Abstract: Despite recent advances in text-to-speech (TTS) models, audio-visual-to-audio-visual (AV2AV) translation still faces a critical challenge: maintaining speaker consistency between the original and translated vocal and facial features. To address this issue, we propose a conditional flow matching (CFM) zero-shot audio-visual renderer that utilizes strong dual guidance from both audio and visual modalities. By leveraging multimodal guidance with CFM, our model robustly preserves speaker-specific characteristics and enhances zero-shot AV2AV translation abilities. For the audio modality, we enhance the CFM process by integrating robust speaker embeddings with x-vectors, which serve to bolster speaker consistency. Additionally, we convey emotional nuances to the face rendering module. The guidance provided by both audio and visual cues remains independent of semantic or linguistic content, allowing our renderer to effectively handle zero-shot translation tasks for monolingual speakers in different languages. We empirically demonstrate that the inclusion of high-quality mel-spectrograms conditioned on facial information not only enhances the quality of the synthesized speech but also positively influences facial generation, leading to overall performance improvements in LSE and FID score. Our code is available at https://github.com/Peter-SungwooCho/MAVFlow.
         ]]></description>
     </item>
     <item>
-        <title>TTS-1 Technical Report</title>
-        <link>https://arxiv.org/abs/2507.21138</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.21138v1</guid>
+        <title>Text-Driven Voice Conversion via Latent State-Space Modeling</title>
+        <link>https://arxiv.org/abs/2503.20999</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2503.20999v2</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Oleg Atamanenko, Anna Chalova, Joseph Coombes, Nikki Cope, Phillip Dang, Zhifeng Deng, Jimmy Du, Michael Ermolenko, Feifan Fan, Yufei Feng, Cheryl Fichter, Pavel Filimonov, Louis Fischer, Kylan Gibbs, Valeria Gusarova, Pavel Karpik, Andreas Assad Kottner, Ian Lee, Oliver Louie, Jasmine Mai, Mikhail Mamontov, Suri Mao, Nurullah Morshed, Igor Poletaev, Florin Radu, Dmytro Semernia, Evgenii Shingarev, Vikram Sivaraja, Peter Skirko, Rinat Takhautdinov, Robert Villahermosa, Jean Wang</dc:creator>
+        <dc:creator>Wen Li, Sofia Martinez, Priyanka Shah</dc:creator>
         <description><![CDATA[
-            本文背景是开发高效且高质量的文本转语音模型。方法上，介绍了基于Transformer的自回归文本转语音模型Inworld TTS - 1，包含16亿参数的TTS - 1和88亿参数的TTS - 1 - Max。通过扩大训练计算量、预训练、微调及对语音语言模型进行强化学习对齐。效果上，两模型在多个基准测试中达最优，能以低延迟生成48kHz高分辨率语音，支持11种语言，可进行细粒度情感控制，代码已开源。
-            arXiv:2507.21138v1 Announce Type: cross 
-Abstract: We introduce Inworld TTS-1, a set of two Transformer-based autoregressive text-to-speech (TTS) models. Our largest model, TTS-1-Max, has 8.8B parameters and is designed for utmost quality and expressiveness in demanding applications. TTS-1 is our most efficient model, with 1.6B parameters, built for real-time speech synthesis and on-device use cases. By scaling train-time compute and applying a sequential process of pre-training, fine-tuning, and RL-alignment of the speech-language model (SpeechLM) component, both models achieve state-of-the-art performance on a variety of benchmarks, demonstrating exceptional quality relying purely on in-context learning of the speaker's voice. Inworld TTS-1 and TTS-1-Max can generate high-resolution 48 kHz speech with low latency, and support 11 languages with fine-grained emotional control and non-verbal vocalizations through audio markups. We additionally open-source our training and modeling code under an MIT license.
+            这是一篇关于音频生成的研究。当前文本驱动的语音转换方法多依赖文本到语音直接训练，限制了对细微风格和音色控制的灵活性。本文提出基于潜在状态空间方法的文本驱动语音转换（LSS - VC），将每个语音视为连续潜在空间中的动态系统，借鉴用于图像风格迁移的方法进行语音风格转换。通过学习语音潜在流形和自适应跨模态融合机制，实现对语音风格和内容的独立控制。实验表明，该方法在主客观质量指标上显著优于现有基线，风格过渡更平滑，伪影更少，对文本风格的控制更精准。
+            arXiv:2503.20999v2 Announce Type: replace 
+Abstract: Text-driven voice conversion allows customization of speaker characteristics and prosodic elements using textual descriptions. However, most existing methods rely heavily on direct text-to-speech training, limiting their flexibility in controlling nuanced style elements or timbral features. In this paper, we propose a novel \textbf{Latent State-Space} approach for text-driven voice conversion (\textbf{LSS-VC}). Our method treats each utterance as an evolving dynamical system in a continuous latent space. Drawing inspiration from mamba, which introduced a state-space model for efficient text-driven \emph{image} style transfer, we adapt a loosely related methodology for \emph{voice} style transformation. Specifically, we learn a voice latent manifold where style and content can be manipulated independently by textual style prompts. We propose an adaptive cross-modal fusion mechanism to inject style information into the voice latent representation, enabling interpretable and fine-grained control over speaker identity, speaking rate, and emphasis. Extensive experiments show that our approach significantly outperforms recent baselines in both subjective and objective quality metrics, while offering smoother transitions between styles, reduced artifacts, and more precise text-based style control.
         ]]></description>
     </item>
     <item>
-        <title>Latent Swap Joint Diffusion for 2D Long-Form Latent Generation</title>
-        <link>https://arxiv.org/abs/2502.05130</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2502.05130v3</guid>
+        <title>Addressing Representation Collapse in Vector Quantized Models with One Linear Layer</title>
+        <link>https://arxiv.org/abs/2411.02038</link>
+        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2411.02038v2</guid>
         <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 31 Jul 2025 00:00:00 -0400</pubDate>
         <arxiv:announce_type>new</arxiv:announce_type>
         <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Yusheng Dai, Chenxi Wang, Chang Li, Chen Wang, Jun Du, Kewei Li, Ruoyu Wang, Jiefeng Ma, Lei Sun, Jianqing Gao</dc:creator>
+        <dc:creator>Yongxin Zhu, Bocheng Li, Yifei Xin, Zhihua Xia, Linli Xu</dc:creator>
         <description><![CDATA[
-            这是一篇关于音频生成的论文。现有联合扩散方法在基于频谱的音频生成中存在频谱混叠问题，原因是频谱去噪时平均算子过度抑制高频分量。为此，论文提出Self - Loop Latent Swap，在相邻视图重叠区域进行帧级双向交换，自适应增强高频分量；还引入Reference - Guided Latent Swap，在非重叠区域提供集中参考轨迹同步子视图扩散。实验表明，SaFa在音频生成上显著优于现有联合扩散及基于训练的方法，也适用于全景生成，速度快2 - 20倍，模型泛化性更强。
-            arXiv:2502.05130v3 Announce Type: replace 
-Abstract: This paper introduces Swap Forward (SaFa), a modality-agnostic and efficient method to generate seamless and coherence long spectrum and panorama through latent swap joint diffusion across multi-views. We first investigate the spectrum aliasing problem in spectrum-based audio generation caused by existing joint diffusion methods. Through a comparative analysis of the VAE latent representation of Mel-spectra and RGB images, we identify that the failure arises from excessive suppression of high-frequency components during the spectrum denoising process due to the averaging operator. To address this issue, we propose Self-Loop Latent Swap, a frame-level bidirectional swap applied to the overlapping region of adjacent views. Leveraging stepwise differentiated trajectories of adjacent subviews, this swap operator adaptively enhances high-frequency components and avoid spectrum distortion. Furthermore, to improve global cross-view consistency in non-overlapping regions, we introduce Reference-Guided Latent Swap, a unidirectional latent swap operator that provides a centralized reference trajectory to synchronize subview diffusions. By refining swap timing and intervals, we can achieve a cross-view similarity-diversity balance in a forward-only manner. Quantitative and qualitative experiments demonstrate that SaFa significantly outperforms existing joint diffusion methods and even training-based methods in audio generation using both U-Net and DiT models, along with effective longer length adaptation. It also adapts well to panorama generation, achieving comparable performance with 2 $\sim$ 20 $\times$ faster speed and greater model generalizability. More generation demos are available at https://swapforward.github.io/
-        ]]></description>
-    </item>
-    <item>
-        <title>Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models</title>
-        <link>https://arxiv.org/abs/2507.08128</link>
-        <guid isPermaLink="false">oai:arXiv.org:oai:arXiv.org:2507.08128v2</guid>
-        <category>我关注的研究话题是：1) 音频分类，包括Audioset/DCASE等数据集上有关audio tagging/sound event detection的工作，尤其是与Audioset Ontology相关的研究。2) 音频生成，包括：a）基础音频生成模型，包括Diffusion、Flow、VQGAN等；b）能够处理音频的LLM，包括音频的tokenization、音频的prompt、音频的上下文学习等。</category>
-        <pubDate>Wed, 30 Jul 2025 00:00:00 -0400</pubDate>
-        <arxiv:announce_type>new</arxiv:announce_type>
-        <dc:rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</dc:rights>
-        <dc:creator>Arushi Goel, Sreyan Ghosh, Jaehyeon Kim, Sonal Kumar, Zhifeng Kong, Sang-gil Lee, Chao-Han Huck Yang, Ramani Duraiswami, Dinesh Manocha, Rafael Valle, Bryan Catanzaro</dc:creator>
-        <description><![CDATA[
-            本文背景是提升音频智能。研究团队提出全开放的大型音频语言模型Audio Flamingo 3（AF3）。方法上，引入统一音频编码器AF - Whisper，采用新策略训练；具备灵活按需思考、多轮多音频聊天等能力；提出多个大规模训练数据集并采用五阶段课程训练策略。效果显著，AF3在超20个（长）音频理解和推理基准测试中取得新的最优结果，超越在更大数据集上训练的开源和闭源模型。
-            arXiv:2507.08128v2 Announce Type: replace 
-Abstract: We present Audio Flamingo 3 (AF3), a fully open state-of-the-art (SOTA) large audio-language model that advances reasoning and understanding across speech, sound, and music. AF3 introduces: (i) AF-Whisper, a unified audio encoder trained using a novel strategy for joint representation learning across all 3 modalities of speech, sound, and music; (ii) flexible, on-demand thinking, allowing the model to do chain-of-thought-type reasoning before answering; (iii) multi-turn, multi-audio chat; (iv) long audio understanding and reasoning (including speech) up to 10 minutes; and (v) voice-to-voice interaction. To enable these capabilities, we propose several large-scale training datasets curated using novel strategies, including AudioSkills-XL, LongAudio-XL, AF-Think, and AF-Chat, and train AF3 with a novel five-stage curriculum-based training strategy. Trained on only open-source audio data, AF3 achieves new SOTA results on over 20+ (long) audio understanding and reasoning benchmarks, surpassing both open-weight and closed-source models trained on much larger datasets.
+            这是一篇关于向量量化模型的研究。背景是向量量化（VQ）在无监督学习中存在表示崩溃问题，现有解决方案效果不佳。方法上，研究人员提出SimpleVQ，通过可学习的线性变换层对潜在基上的码向量进行重新参数化，优化整个线性空间。实验结果显示，在图像和音频任务中，该方法有效防止了表示崩溃，提高了码本利用率，易于实现，且在不同模态和架构下具有良好的泛化性。
+            arXiv:2411.02038v2 Announce Type: replace-cross 
+Abstract: Vector Quantization (VQ) is essential for discretizing continuous representations in unsupervised learning but suffers from representation collapse, causing low codebook utilization and limiting scalability. Existing solutions often rely on complex optimizations or reduce latent dimensionality, which compromises model capacity and fails to fully solve the problem. We identify the root cause as disjoint codebook optimization, where only a few code vectors are updated via gradient descent. To fix this, we propose \textbf{Sim}ple\textbf{VQ}, which reparameterizes code vectors through a learnable linear transformation layer over a latent basis, optimizing the \textit{entire linear space} rather than nearest \textit{individual code vectors}. Although the multiplication of two linear matrices is equivalent to applying a single linear layer, this simple approach effectively prevents collapse. Extensive experiments on image and audio tasks demonstrate that SimVQ improves codebook usage, is easy to implement, and generalizes well across modalities and architectures.
         ]]></description>
     </item>
 </channel>
